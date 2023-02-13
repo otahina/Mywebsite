@@ -61,10 +61,6 @@ html{
     font-family: 'Share Tech Mono', monospace;
 }
 
-.highlight{
-    color:yellow;
-}
-
 .var{
     color:rgba(249, 16, 249, 0.823);
 }
@@ -73,13 +69,21 @@ html{
     color:yellow;
 }
 
+.std{
+    color:lightseagreen;
+}
+
+.print{
+    color:orange;
+}
+
 /* Header */
 
 
 header {
     color:white;
     width: 100%;
-    height: 100px;
+    height: 80px;
 }
 
 header a{
@@ -101,7 +105,7 @@ header nav ul li{
 
 header nav ul li a{
     display: inline;
-    font-size: 12px;
+    font-size: 20px;
     padding-left: 30px;
 }
 
@@ -158,13 +162,22 @@ header nav ul li a:hover{
     width: calc(100%- 32px);
     height: 40px;
     background-color: #64ffda;
+    transition: all 0.3s ease-in-out;
 }
+
+.index-boxlink a{
+    text-decoration: none;
+ }
 
 .index-boxlink h3{
    font-size: 20px;
    line-height: 40px;
    text-align: center;
    color:#0a192f;
+}
+
+.index-boxlink:hover{
+    background-color:yellow;
 }
 
 /* For Desktop */
@@ -239,57 +252,77 @@ footer{
 
 /* About Me */
 
-.about_me{
-    height: 300px;
-    color:white;
+.me{
     background: url(../img/me.png) no-repeat;
-    background-size: 200px;
-    background-position: center 80%;
-    padding-top: 20px;
+    background-size: 100px;
+    margin-left: 10px;
+    height: 120px;
 }
 
-.about_me h2{
+.me-container{
+    border: #64ffda solid 3px;
+    width: 180px;
+    margin-left: 130px;
+}
+
+#about-me{
+    width: 100%;
+    height: 580px;
+    padding-top: 10px;
+}
+
+#about-me h1{
+    color:#64ffda;
     font-size: 27px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
     margin: 0;
     text-align: center;
+}
+
+#about-me h2{
     color:white;
+    margin: 5px;
+    text-align: center;
+    margin-right: 50px;
+    font-size: 14px;
 }
 
-.about_me h3{
-    font-size: 25px;
+#about-me h3{
+    color:white;
+    margin: 5px;
+    text-align: right;
+    margin-right: 50px;
+    font-size: 14px;
+    
+}
+
+#about-me h4{
+    color:white;
+    margin: 5px;
+    text-align: center;
+    margin-right: 35px;
+    font-size: 14px;
+    
+}
+
+#about-me h5{
+    color:white;
+    margin: 5px;
+    text-align: center;
+    margin-right: 130px;
+    font-size: 14px;
+    
+}
+
+#about-me p{
+    color: white;
+    font-size: 16px;
     float:left;
-    padding-top: 50px;
+    padding-top: 30px;
     margin: 0;
-    padding-left: 110px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
-
-
-.about_me h4{
-    font-size: 25px;
-    float:right;
-    padding-top: 50px;
-    margin: 0;
-    padding-right: 80px;
-}
-
-.about_me h5{
-    font-size: 25px;
-    float:left;
-    padding-top: 100px;
-    margin: 0;
-    padding-left: 110px;
-}
-
-
-.about_me h6{
-    font-size: 25px;
-    float:right;
-    padding-top: 100px;
-    margin: 0;
-    padding-right: 180px;
-}
-
 
 /* Home Contents */
 
@@ -321,4 +354,3 @@ footer{
     padding-top: 20px;
     text-align: center;
 }
-
