@@ -21,6 +21,6 @@ This website has a vintage aesthetic that transports you back to the days of vin
 
 ## 🖥 How to View 🖥
 
-
-
+Click below!😀
+https://otahina.github.io/Mywebsite/
 
