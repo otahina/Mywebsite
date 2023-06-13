@@ -1,356 +1,222 @@
 /* Reset style sheet */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
     font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    font-family: 'Lobster', cursive;
+    background-color: white;
+    color: #fff;
+    overflow-x: hidden;
+    line-height: 1.5;
+  }
+  
+  img, video {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+  
+  /* Global */
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Header */
+  
+  .header-body-background {
+    background-image: url("/img/main_background.jpeg");
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height:700px;
 }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* Global */
-
-body{
-    background-color:#0a192f;
-}
-
-html{
-    background-color:#0a192f;
-    font-family: 'Share Tech Mono', monospace;
-}
-
-.var{
-    color:rgba(249, 16, 249, 0.823);
-}
-
-.string{
-    color:yellow;
-}
-
-.std{
-    color:lightseagreen;
-}
-
-.print{
-    color:orange;
-}
-
-/* Header */
-
 
 header {
-    color:white;
-    width: 100%;
-    height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color:#5ce1e6;
+} 
+
+header nav ul {
+  display: flex;
 }
 
-header a{
-    color:white;
-    text-decoration: none;
+header nav ul li {
+  list-style: none;
+  margin-left: 3rem;
 }
 
-header nav ul{
-    display: block;
-    padding: 0;
-    width: fit-content;
+header nav ul li a {
+  font-size: 1.3rem;
+  transition: color 0.3s;
 }
 
-header nav ul li{
-    display: inline-block;
-    list-style: none;
-    padding-top:20px;
+header nav ul li a:hover {
+  color: white;
 }
-
-header nav ul li a{
-    display: inline;
-    font-size: 20px;
-    padding-left: 30px;
-}
-
-header nav ul li a:hover{
-    color:#64ffda;
-}
-
+  
 /* Showcase */
-
-#showcase{
-    width: 100%;
-    height: 450px;
-    text-align: center;
-    color:white;
-    font-size: 15px;
-    padding-top:20px;
-    padding-left: 0;
-    flex-basis: 53.4752%;
+  
+  .parallax {
+    /* The image URL will be the image you want to use */
+    background-image: url("/img/main_background.jpeg");
+    height: 700px; /* Set a specific height */
+    background-attachment: fixed;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-#showcase h1{
-    color:#64ffda;
-    font-size: 50px;
-    padding-bottom: 20px;
-    text-align: center;
-    position: relative;
-    animation: heading;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+.content {
+    height: 700px; 
+}
+
+.record-container {
+  position: relative;
+  width: 300px;  /* the same width as the image */
+  height: 300px;  /* the same height as the image */
+  margin: 0 auto;  /* center the container */
+  margin-top: 50px;
+}
+
+.record-container h1 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2em;  /* adjust this to fit the text within the image */
+  z-index: 1;
+}
+
+.content h1{
+  font-size: 75px;
+  z-index: 2;
+  text-align: center;
+  padding-top: 130px;
+  color:#5ce1e6;
+  text-shadow: -2px -2px 0  #806600,
+  2px -2px 0  #806600,
+ -2px 2px 0  #806600,
+  2px 2px 0  #806600;
+  font-weight: bolder;
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.content img.spin {
+  position: absolute;
+  top: 80%; /* To center it vertically */
+  left: 50%; /* To center it horizontally */
+  transform: translate(-50%, -50%); /* To shift the image's center to the exact center of the container */
+  z-index: 1; /* This will keep the image below the text */
+  width: 300px; 
+  animation: spin 2s infinite linear; 
+}
+
+.corner-image {
+  position: absolute;
+  bottom: 0;
+}
+
+.corner-image.left {
+  left: 0;
+  bottom: -100px;
+  width: 400px; 
+}
+
+.corner-image.right {
+  right: 0;
+  bottom: -10px;
+  width: 300px; 
+}
+
+@keyframes spin {
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 @keyframes heading {
-    0% {top: -70px;}
-    100% {top: 5px;}
+  0% {top: -40px;}
+  100% {top: 175px;}
 }
 
-#showcase h4{
-    padding-top: 10px;
-    color:#64ff92;
-    font-size: 20px;
-    text-align: center;
+/*About me showcase */
+
+.about{
+  background: url(../img/me.png) no-repeat;
+  background-color: white;
+  height: 700px;
+  background-size: 380px;
+  background-position: left;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 50px;
 }
 
-#showcase p{
-    padding-top: 10px;
-    color:white;
-    font-size: 16px;
-    margin: 0;
-    padding-top: 13px;
+
+.gradient-text{
+  margin-left: 250px;
+  margin-top: 150px;
+  margin-bottom: 0;
+  display: inline-block;
+  text-align: center;
+  width: 500px;
+  font-size: 50px;
+  background-image: linear-gradient(90deg,#2ca2b4,#5598de,
+  #7f87ff 45%,#f65aad 76%,#ec3d43);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
-.index-boxlink {
-    margin:16px 16px 0;
-    width: calc(100%- 32px);
-    height: 40px;
-    background-color: #64ffda;
-    transition: all 0.3s ease-in-out;
+.about p{
+  color:black;
+  margin-top:10px;
+  font-size:25px;
+  margin-left: 410px;
+  font-weight:400;
+  font-family:'Courier New', Courier, monospace;
 }
 
-.index-boxlink a{
-    text-decoration: none;
- }
+/* For smartphone */
 
-.index-boxlink h3{
-   font-size: 20px;
-   line-height: 40px;
-   text-align: center;
-   color:#0a192f;
+@media (max-width: 600px) {
+  .corner-image {
+      width: 50px; 
+  }
+
+  .corner-image.left {
+      left: 20px; /* adjust the position so it doesn't go off the edge of the screen */
+  }
+
+  .corner-image.right {
+      right: 20px; /* adjust the position so it doesn't go off the edge of the screen */
+  }
 }
 
-.index-boxlink:hover{
-    background-color:yellow;
-}
-
-/* For Desktop */
-
-@media only screen and (min-width: 800px) {
-
-    header {
-        color:white;
-        width: 100%;
-        height: 60px;
-        margin-left: 30px;
-        margin-top: 10px;
-    }
-   
-    #showcase h1{
-    color:#64ffda;
-    font-size: 50px;
-    padding-bottom: 20px;
-    text-align: center;
-    position: relative;
-    animation: heading;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-   }
-
-   #showcase h4{
-    padding-top: 10px;
-    color:#64ff92;
-    font-size: 25px;
-    text-align: center;
-    }
-
-    #showcase p{
-    padding-top: 10px;
-    color:white;
-    font-size: 20px;
-    margin: 0;
-    padding-top: 13px;
-    }
-
-   .index-boxlink-container {
-    width: 100%;
-    height: 500px;
-    margin: 100px;
-   }
-
-   .index-boxlink {
-    width: 250px;
-    height: 40px;
-    display: inline-block;
-    background-color: #64ffda;
-    }
-    
-   .index-boxlink h3{
-    font-size: 20px;
-    line-height: 40px;
-    text-align: center;
-    color:#0a192f;
-    }
-}
-
-footer{
-    background-color:#0a192f;  
-    width: 100%;
-    color: white;
-    font-size: 16px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 50px;
-    text-align: center;
-}
-
-/* About Me */
-
-.me{
-    background: url(../img/me.png) no-repeat;
-    background-size: 100px;
-    margin-left: 10px;
-    height: 120px;
-}
-
-.me-container{
-    border: #64ffda solid 3px;
-    width: 180px;
-    margin-left: 130px;
-}
-
-#about-me{
-    width: 100%;
-    height: 580px;
-    padding-top: 10px;
-}
-
-#about-me h1{
-    color:#64ffda;
-    font-size: 27px;
-    padding-bottom: 20px;
-    margin: 0;
-    text-align: center;
-}
-
-#about-me h2{
-    color:white;
-    margin: 5px;
-    text-align: center;
-    margin-right: 50px;
-    font-size: 14px;
-}
-
-#about-me h3{
-    color:white;
-    margin: 5px;
-    text-align: right;
-    margin-right: 50px;
-    font-size: 14px;
-    
-}
-
-#about-me h4{
-    color:white;
-    margin: 5px;
-    text-align: center;
-    margin-right: 35px;
-    font-size: 14px;
-    
-}
-
-#about-me h5{
-    color:white;
-    margin: 5px;
-    text-align: center;
-    margin-right: 130px;
-    font-size: 14px;
-    
-}
-
-#about-me p{
-    color: white;
-    font-size: 16px;
-    float:left;
-    padding-top: 30px;
-    margin: 0;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-/* Home Contents */
-
-.contents{
-    background: url(../img/data_analysis.png) no-repeat;
-    background-size: 400px;
-    margin-top: 0;
-    padding-top: 0;
-    padding-left: 50px;
-    height: 600px;
-}
-
-.contents h2{
-    color:white;
-    margin-top: 0;
-    padding-top: 30px;
-    padding-left: 400px;
-    font-size: 40px;
-}
-
-/* Footer */
-footer{
-    background-color:#0a192f;  
-    width: 100%;
-    color: white;
-    font-size: 16px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 20px;
-    text-align: center;
-}
