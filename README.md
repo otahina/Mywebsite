@@ -21,5 +21,11 @@ This website has a vintage aesthetic that transports you back to the days of vin
 
 ## How to View 
 
+To view the website, simply clone the repository and open `index.html` in your browser.
+
+```bash
+git clone https://github.com/otahina/HinasRetroWebsite.git
+cd HinasRetroWebsite
+open index.html
 
 
