@@ -41,7 +41,7 @@
   /* Header */
   
   .header-body-background {
-    background-image: url("/img/main_background.jpeg");
+    background-image: url("../img/main_background.jpeg");
     background-attachment: fixed;
     background-position: center; 
     background-repeat: no-repeat;
@@ -83,7 +83,7 @@ header nav ul li a:hover {
   
   .parallax {
     /* The image URL will be the image you want to use */
-    background-image: url("/img/main_background.jpeg");
+    background-image: url("../img/main_background.jpeg");
     height: 700px; /* Set a specific height */
     background-attachment: fixed;
     background-position: center; /* Center the image */
