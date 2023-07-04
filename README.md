@@ -1,18 +1,15 @@
-# 🌟 Hina's Retro Website 🌟
+# 🌟 Hina's Portfolio Website 🌟
 
-Welcome to the repository for my **personal website**! It's built with HTML, CSS, and a sprinkle of nostalgia. 
+Welcome to the repository for my **personal website**! It's built with HTML, CSS. 
 
 ![Preview of Hina's Retro Website](./preview.png)
 
 ## 🚀 Overview 🚀
 
-This website has a vintage aesthetic that transports you back to the days of vinyl records and old cars. It was inspired by my love for retro design and 50s music. 
+This website serves as my professional portfolio. My goal was to create a design that is concise and simple, yet colorful and energetic. By visiting the site, I hope you will be able to learn more about me and my work! 😆
 
 ## 🔥 Features 🔥
 
-* **🎙 Retro Design:** The website sports a vintage aesthetic complete with nostalgic design elements. 
-* **💽 Spinning Record Animation:** Enjoy a CSS-driven animation of a spinning vinyl record in the center of the homepage. 
-* **📱 Responsive Layout:** The website is responsive and mobile-friendly, ensuring a seamless experience on all devices.
 
 ## 🛠 Technologies Used 🛠
 
@@ -21,6 +18,20 @@ This website has a vintage aesthetic that transports you back to the days of vin
 
 ## 🖥 How to View 🖥
 
-Click the link!😀
-https://otahina.github.io/Mywebsite/
+Visit my portfolio at this link!😀 [https://otahina.github.io/Mywebsite/](https://otahina.github.io/Mywebsite/)
+
+## 💼 Setup 💼
+
+If you want to view this project locally:
+
+1. Clone this repository to your local machine.
+2. Open the `index.html` file in your browser.
+
+## 📞 Contact 📞
+
+I'd love to hear your thoughts on my portfolio! You can reach out to me on LinkedIn.
+
+## 🙏 Acknowledgments 🙏
+
+I would like to thank all the developers and resources that made this project possible.
 
