@@ -14,29 +14,75 @@
   <div class="container">
     <div class="left box">
         <h1>Hi, I'm Hina Ota!</h1>
-        <h4>SOftware Engineer</h4>
-        <img src="./img/me.png">
+        <h4>-SOftware Engineer, tech enthusiast</h4>
+        <img class="img-me" src="./img/me.png">
     </div>
     <div class="right">
-        <div class="box about-me">
+        <div class="box about-me" id="about-me-button">
             <h2>About Me</h2>
         </div>
-        <div class="box skills">
+        <div class="box skills" id="skills-button">
             <h2>Skills</h2>
         </div>
-        <div class="box projects">
+        <div class="box projects" id="projects-button">
             <h2>Projects</h2>
         </div>
-        <div class="box carrier">
+        <div class="box carrier" id="carrier">
             <h2>Carrier</h2>
         </div>
-        <div class="box contacts">
+        <div class="box contacts" id="contacts-button">
             <h2>Contacts</h2>
         </div>
         <div class="box copyright">
-            <h2>Copyright &copy; 2023 Hina Ota</h2>
+            <h3>Copyright &copy; 2023 Hina Ota</h3>
         </div>
     </div>
 </div>
+<!-- About me modal -->
+<div id="about-me-modal" class="modal">
+  <div class="modal-content-about">
+    <span class="close">&times;</span>
+    <img id="car_oldies" src="./img/car_oldies.png">
+    <h4 class="gradient-text">About Me</h4>
+    <p>Hi, I'm Hina Ota, a <span class="bolder-text">Computer Science student </span>with a passion for solving problems and building fun projects. Currently studying at the University of Debrecen in Hungary, I have been improving my skills in various programming languages and software development methodologies. My ultimate goal is to become a <span class="bolder-text">Software engineer</span>, a path that allows me to leverage my love for technology and my knack for problem-solving.</p>
+    <p>Through my academic and personal projects, I've gained experience in a range of technologies including <span class="bolder-text">Python, Java, JavaScript, HTML&CSS</span>. I particularly enjoy working on making web applications powered by AI, including front-end and back-end.</p>
+    <p>In my spare time, I love diving into new technologies, and constantly learning to stay on top of industry trends. I’m having so much fun to be creative, and make things efficient.</p>
+    <p>I'm always up for a challenge and look forward to the opportunities and problems I will tackle in my future as a software engineer. If you’d like to connect or discuss any opportunities, feel free to contact me!</p>
+  </div>
+</div>
+<!-- Skills modal -->
+<div id="skills-modal" class="modal">
+  <div class="modal-content-skills">
+    <span class="close">&times;</span>
+    <img id="record" src="./img/record.png">
+    <h4 class="gradient-text">Skills</h4>
+  </div>
+</div>
+<!-- Projects -->
+<div id="projects-modal" class="modal">
+  <div class="modal-content-projects">
+    <span class="close">&times;</span>
+    <img id="car_oldies" src="./img/car_oldies.png">
+    <h4 class="gradient-text">Projects</h4>
+  </div>
+</div>
+<!-- Carrier -->
+<div id="carrier-modal" class="modal">
+  <div class="modal-content-carrier">
+    <span class="close">&times;</span>
+    <img id="car_oldies" src="./img/car_oldies.png">
+    <h4 class="gradient-text">Carrier</h4>
+  </div>
+</div>
+<!-- Contacts -->
+<div id="contacts-modal" class="modal">
+  <div class="modal-content-contacts">
+    <span class="close">&times;</span>
+    <img id="car_oldies" src="./img/car_oldies.png">
+    <h4 class="gradient-text">Contacts</h4>
+  </div>
+</div>
+<script src="./js/script.js"></script>
 </body>
 </html>
+
