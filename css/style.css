@@ -34,175 +34,195 @@
   
   /* Global */
   
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Header */
-  
-  .header-body-background {
-    background-image: url("../img/main_background.jpeg");
-    background-attachment: fixed;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height:700px;
+body, html {
+    height: 100%; 
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  color:#5ce1e6;
-} 
-
-header nav ul {
-  display: flex;
-}
-
-header nav ul li {
-  list-style: none;
-  margin-left: 3rem;
-}
-
-header nav ul li a {
-  font-size: 1.3rem;
-  transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-  color: white;
+.bolder-text {
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 800;
 }
   
 /* Showcase */
+
+
+.container {
+  display: flex;
+  height: 100vh; /* This will make the container take up the full viewport height */
+  background-color: #f974a6;
+}
+
+.left.box {
+
+  border-style: None;
+  height: 100%;
+  width: 600px;
+}
+
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.left {
+  justify-content: space-between; 
+}
+
+.right {
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* This creates two equal width columns */
+  grid-template-rows: repeat(3, 1fr); /* This creates three equal height rows */
+}
+
+.left.box p {
+  font-size: 19px;
+  margin-top: 10px;
+  width: 300px;
+  text-align: left;
+}
+
+.img-me {
+  margin: 40px; 
+  height: 400px;
+  width: 350px;
+}
+
+.box {
+  height: 33.33%; /* This will make each box take up a third of the container's height */
+  box-sizing: border-box; /* This includes the border in the element's total width and height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-style: None;
+  font-size: 23px;
   
-  .parallax {
-    /* The image URL will be the image you want to use */
-    background-image: url("../img/main_background.jpeg");
-    height: 700px; /* Set a specific height */
-    background-attachment: fixed;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.content {
-    height: 700px; 
+.box h2:hover {
+  color: #7f87ff;
 }
 
-.record-container {
-  position: relative;
-  width: 300px;  /* the same width as the image */
-  height: 300px;  /* the same height as the image */
-  margin: 0 auto;  /* center the container */
-  margin-top: 50px;
+.about-me {
+  background-color: #00c4cc;
+  margin: 0px;
+  height: 100%;
+}
+  
+.skills {
+  background-color: #ffbd59;
+  height: 100%;
 }
 
-.record-container h1 {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 2em;  /* adjust this to fit the text within the image */
-  z-index: 1;
+.projects {
+  background-color: #a548ff;
+  height: 100%;
 }
 
-.content h1{
-  font-size: 75px;
-  z-index: 2;
-  text-align: center;
-  padding-top: 130px;
-  color:#5ce1e6;
-  text-shadow: -2px -2px 0  #806600,
-  2px -2px 0  #806600,
- -2px 2px 0  #806600,
-  2px 2px 0  #806600;
-  font-weight: bolder;
-  animation: heading;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
+.copyright {
+  font-size: 18px;
+  background-color: #00c4cc;
+  height: 100%;
 }
 
-.content img.spin {
-  position: absolute;
-  top: 80%; /* To center it vertically */
-  left: 50%; /* To center it horizontally */
-  transform: translate(-50%, -50%); /* To shift the image's center to the exact center of the container */
-  z-index: 1; /* This will keep the image below the text */
-  width: 300px; 
-  animation: spin 2s infinite linear; 
+.contacts {
+  background-color: #fa643f;
+  height: 100%;
 }
 
-.corner-image {
-  position: absolute;
-  bottom: 0;
+.carrier {
+  height: 100%;
 }
 
-.corner-image.left {
+/* Modal About Me */
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
   left: 0;
-  bottom: -100px;
-  width: 400px; 
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needergbd */
+  background-color: rgba(178, 187, 190, 0.3); /* Opacity */
 }
 
-.corner-image.right {
-  right: 0;
-  bottom: -10px;
-  width: 300px; 
+.modal-content-about {
+  background-color: #fefefe;
+  color: black;
+  margin:auto;
+  padding: 20px 30px 0px 50px;
+  border: 15px outset #00c4cc;
+  width: 80%;
+  height: 600px;
 }
 
-@keyframes spin {
-  100% {
-      transform: translate(-50%, -50%) rotate(360deg);
-  }
+.close {
+  color: black;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
 }
 
-@keyframes heading {
-  0% {top: -40px;}
-  100% {top: 175px;}
+.close:hover,
+.close:focus {
+  color: #2ca2b4;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/*About me showcase */
-
-.about{
-  background: url(../img/me.png) no-repeat;
-  background-color: white;
-  height: 700px;
-  background-size: 380px;
-  background-position: left;
-  margin-top: 0;
-  padding-top: 0;
-  margin-left: 50px;
+.modal-content-about p{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 
 .gradient-text{
-  margin-left: 250px;
-  margin-top: 150px;
-  margin-bottom: 0;
+
   display: inline-block;
-  text-align: center;
-  width: 500px;
-  font-size: 50px;
-  background-image: linear-gradient(90deg,#2ca2b4,#5598de,
-  #7f87ff 45%,#f65aad 76%,#ec3d43);
+  text-align: left;
+  width: 180px;
+  font-size: 45px;
+  background-image: linear-gradient(0deg,#2ca2b4 0%,#5598de 25%,
+  #7f87ff 50%,#f65aad,#ec3d43);
   color: transparent;
   -webkit-background-clip: text;
 }
 
-.about p{
-  color:black;
-  margin-top:10px;
-  font-size:25px;
-  margin-left: 410px;
-  font-weight:400;
-  font-family:'Courier New', Courier, monospace;
+#car_oldies {
+  margin: 0px;
+  height: 90px;
+  width: 90px;
+  padding-bottom: 10px;
+  margin-right: 20px;
 }
+
+/* Modal Skills */
+
+.modal-content-skills {
+  background-color: #fefefe;
+  color: black;
+  margin:auto;
+  padding: 20px 30px 0px 50px;
+  border: 15px outset #00c4cc;
+  width: 80%;
+  height: 600px;
+}
+
+#record {
+  margin: 0px;
+  height: 70px;
+  width: 50px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+}
+
 
 /* For smartphone */
 
