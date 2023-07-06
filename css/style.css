@@ -160,6 +160,7 @@ body, html {
   border: 15px outset #00c4cc;
   width: 80%;
   height: 600px;
+  overflow: auto; 
 }
 
 .close {
@@ -213,6 +214,7 @@ body, html {
   border: 15px outset #00c4cc;
   width: 80%;
   height: 600px;
+  overflow: auto; 
 }
 
 #record {
@@ -325,13 +327,13 @@ body, html {
 .others-item {
   margin-right: 30px;
   padding: 14px 20px;
-  border: 5px solid #68e9a4;
+  border: 5px solid #7f87ff;
   border-radius: 40px;
   display: inline-block;
   width: 300px;
   height: 60px;
   text-align: center;
-  background-color: #68e9a4;
+  background-color: #7f87ff;
   cursor: pointer;
 }
 
