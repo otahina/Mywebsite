@@ -472,17 +472,88 @@ body, html {
 
 /* For smartphone */
 
-@media (max-width: 600px) {
-  .corner-image {
-      width: 50px; 
+@media (max-width: 768px) {
+
+  /* Reset style sheet */
+
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
   }
 
-  .corner-image.left {
-      left: 20px; /* adjust the position so it doesn't go off the edge of the screen */
+  html, body {
+    font-size: 80%; /* Reduce font-size for mobile screens */
+    font-family: 'Lobster', cursive;
+    background-color: white;
+    color: #fff;
+    overflow-x: hidden;
+    line-height: 1.5;
   }
 
-  .corner-image.right {
-      right: 20px; /* adjust the position so it doesn't go off the edge of the screen */
+  .container {
+    flex-direction: column; /* stack the elements vertically */
+    height: auto; /* Allow the height to expand as needed */
   }
+
+  .left, .right {
+    width: 100%; /* Take up full width on small screens */
+  }
+
+  .right {
+    grid-template-columns: 1fr; /* Change to one column layout */
+    grid-template-rows: auto; /* Allow rows to take up as much space as needed */
+  }
+
+  .left.box {
+    width: 100%; /* Take up full width on small screens */
+  }
+
+  .left.box p {
+    font-size: 16px; /* Reduce font-size for mobile screens */
+    width: 90%; /* Allow text to take more width */
+  }
+
+  .img-me {
+    margin: 20px; 
+    height: auto; /* Maintain aspect ratio */
+    width: 80%; /* Allow image to take more width */
+  }
+
+  .box {
+    height: auto; /* Allow boxes to expand as needed */
+  }
+
+  .modal-content-about,
+  .modal-content-skills,
+  .modal-content-projects {
+    width: 90%; /* Allow modal content to take up more width */
+    height: auto; /* Allow modal content to expand as needed */
+  }
+
+  .skills-section,
+  .skills-section-lg {
+    max-width: 100%; /* Allow skills section to take up full width */
+  }
+
+  .programming-item,
+  .tools-item,
+  .others-item {
+    width: auto; /* Allow items to take up as much width as needed */
+    white-space: nowrap; /* Prevent wrapping of text */
+  }
+
+  .progress-text {
+    width: auto; /* Allow text to take up as much width as needed */
+    padding-left: 0px; /* Remove unnecessary padding */
+  }
+
+  #pp_preview {
+    padding: 0px 20px; /* Reduce padding */
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Allow image to take full width */
+  }
+
 }
 
