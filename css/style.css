@@ -223,6 +223,60 @@ body, html {
   margin-right: 20px;
 }
 
+.skills-section {
+  width: 100%;
+  max-width: 920px;
+  margin-left: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
+.programming-list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.programming-item {
+  margin-right: 30px;
+  padding: 10px 10px;
+  border: 5px solid #68e5e9;
+  border-radius: 40px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background-color: #68e5e9;
+  cursor: pointer;
+}
+
+.skills-section h4{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+.tools-list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+}
+
+.tools-item {
+  margin-right: 30px;
+  padding: 14px 20px;
+  border: 5px solid #68e9a4;
+  border-radius: 40px;
+  display: inline-block;
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  background-color: #68e9a4;
+  cursor: pointer;
+}
+
+
 
 /* For smartphone */
 
