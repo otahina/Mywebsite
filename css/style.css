@@ -365,7 +365,25 @@ body, html {
 
 .project h3 {
   color: rgb(255, 106, 0);
-  font-size: 30px;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.project h6{
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.project p{
+  margin-bottom: 20px;
+}
+
+#pp_preview {
+  position: center;
+  padding: 0px 100px 0px 80px;
+  height: 500px;
+  width:  900px;
 }
 
 /* Contacts */
