@@ -339,7 +339,6 @@ body, html {
 
 /* Projects */
 
-
 .modal-content-projects {
   background-color: #fefefe;
   color: black;
@@ -349,6 +348,24 @@ body, html {
   width: 80%;
   height: 600px;
   overflow: auto; 
+}
+
+#computer {
+  margin: 0px;
+  height: 75px;
+  width: 60px;
+  padding-bottom: 20px;
+  margin-right: 20px;  
+}
+
+.project {
+  margin: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.project h3 {
+  color: rgb(255, 106, 0);
+  font-size: 30px;
 }
 
 /* Contacts */
@@ -363,6 +380,45 @@ body, html {
   width: 80%;
   height: 400px;
   overflow: auto; 
+}
+
+.modal-content-contacts p {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 10px 0px 10px;
+}
+
+#linkedin {
+  color: #0077b5;
+}
+
+#linkedin:hover{
+  color:#7f87ff;
+}
+
+#github:hover{
+  color:#7f87ff;
+}
+
+#email {
+  color:#f4b46a;
+}
+
+#email:hover{
+  color:#a1a1a1;
+}
+
+.contact-icon {
+  font-size: 50px;
+  transition: color 0.3s ease;
 }
 
 
