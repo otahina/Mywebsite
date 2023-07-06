@@ -261,6 +261,7 @@ body, html {
   list-style: none;
   padding: 0px;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .tools-item {
@@ -276,7 +277,36 @@ body, html {
   cursor: pointer;
 }
 
+.skills-section-lg {
+  width: 100%;
+  max-width: 520px;
+  margin-left: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
 
+.skills-section-lg h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.language-name {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.progress {
+  background-color: #000000;
+  border-radius: 50px;
+  height: 25px;
+}
+
+.progress-bar {
+  background-color: #dc5e34;
+  height: 100%;
+  border: solid #000000;
+  border-radius: 50px;
+}
 
 /* For smartphone */
 
