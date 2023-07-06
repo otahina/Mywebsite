@@ -148,7 +148,7 @@ body, html {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needergbd */
+  overflow: auto; 
   background-color: rgba(178, 187, 190, 0.3); /* Opacity */
 }
 
@@ -336,6 +336,35 @@ body, html {
   background-color: #7f87ff;
   cursor: pointer;
 }
+
+/* Projects */
+
+
+.modal-content-projects {
+  background-color: #fefefe;
+  color: black;
+  margin:auto;
+  padding: 20px 30px 0px 50px;
+  border: 15px outset #00c4cc;
+  width: 80%;
+  height: 600px;
+  overflow: auto; 
+}
+
+/* Contacts */
+
+
+.modal-content-contacts {
+  background-color: #fefefe;
+  color: black;
+  margin:auto;
+  padding: 20px 30px 0px 50px;
+  border: 15px outset #00c4cc;
+  width: 80%;
+  height: 400px;
+  overflow: auto; 
+}
+
 
 /* For smartphone */
 

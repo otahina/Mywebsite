@@ -1,12 +1,11 @@
-function showModal(modalId) {
+window.onload = function() {
+  function showModal(modalId) {
     var modal = document.getElementById(`${modalId}-modal`);
-  
     modal.style.display = 'block';
   }
   
   function hideModal(modalId) {
     var modal = document.getElementById(`${modalId}-modal`);
-  
     modal.style.display = 'none';
   }
   
@@ -17,8 +16,13 @@ function showModal(modalId) {
       showModal(section);
     });
   
-    document.getElementById(`${section}-modal`).querySelector('.close').addEventListener('click', function() {
-      hideModal(section);
-    });
+    var closeModalElement = document.getElementById(`${section}-modal`).querySelector('.close');
+    if (closeModalElement) {
+      closeModalElement.addEventListener('click', function() {
+        hideModal(section);
+      });
+    } else {
+      console.warn(`No .close element found in ${section}-modal`);
+    }
   });
-  
+}
