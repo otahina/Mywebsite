@@ -386,6 +386,36 @@ body, html {
   width:  900px;
 }
 
+/* Carrier */
+
+.modal-content-carrier {
+  background-color: #fefefe;
+  color: black;
+  margin:auto;
+  padding: 20px 30px 0px 50px;
+  border: 15px outset #00c4cc;
+  width: 80%;
+  height: 600px;
+  overflow: auto; 
+}
+
+.carrier-section{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 10px 20px 10px 20px;
+}
+
+.carrier-section h2{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  background-color: rgba(38, 251, 255, 0.5);
+  border-radius: 40px;
+  padding: 20px;
+  
+}
+
+
+
 /* Contacts */
 
 
