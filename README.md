@@ -2,7 +2,7 @@
 
 Welcome to the repository for my **personal website**! It's built with HTML, CSS. 
 
-![Preview of Hina's Retro Website](./demo.gif)
+![Preview of Hina's Retro Website](./preview.gif)
 
 ## 🚀 Overview 🚀
 
