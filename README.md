@@ -31,7 +31,4 @@ If you want to view this project locally:
 
 I'd love to hear your thoughts on my portfolio! You can reach out to me on LinkedIn.
 
-## 🙏 Acknowledgments 🙏
-
-I would like to thank all the developers and resources that made this project possible.
 
