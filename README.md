@@ -2,7 +2,7 @@
 
 Welcome to the repository for my **personal website**! It's built with HTML, CSS. 
 
-<video src="preview.mov" width="400" height="400" controls preload></video>
+<video src="./preview.mov" width="400" height="400" controls preload></video>
 
 ## 🚀 Overview 🚀
 
