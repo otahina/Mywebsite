@@ -17,6 +17,7 @@ This website serves as my professional portfolio. My goal was to create a design
 
 * **HTML5**
 * **CSS3**
+* **JavaScript**
 
 ## 🖥 How to View 🖥
 
