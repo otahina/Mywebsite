@@ -2,7 +2,9 @@
 
 Welcome to the repository for my **personal website**! It's built with HTML, CSS. 
 
-<video src="./preview.mov" width="400" height="400" controls preload></video>
+
+https://github.com/otahina/Mywebsite/assets/108225969/ff91acce-d0d9-4ef8-a339-62548ff1ece2
+
 
 ## 🚀 Overview 🚀
 
