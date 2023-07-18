@@ -1,8 +1,10 @@
 # 🌟 Hina's Portfolio Website 🌟
 
-Welcome to the repository for my **personal website**! It's built with HTML, CSS. 
+Welcome to the repository for my **personal website**! It's built with HTML, CSS, JavaScript. 
 
-![Preview of Hina's Retro Website](./preview.png)
+
+https://github.com/otahina/Mywebsite/assets/108225969/ff91acce-d0d9-4ef8-a339-62548ff1ece2
+
 
 ## 🚀 Overview 🚀
 
@@ -13,8 +15,15 @@ This website serves as my professional portfolio. My goal was to create a design
 
 ## 🛠 Technologies Used 🛠
 
-* **HTML5**
-* **CSS3**
+  <a href="https://www.w3.org/html/" target="_blank"> 
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5" /> 
+  </a> 
+  <a href="https://www.w3schools.com/css/" target="_blank"> 
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3" /> 
+  </a> 
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> 
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript" /> 
+  </a> 
 
 ## 🖥 How to View 🖥
 
@@ -34,4 +43,5 @@ I'd love to hear your thoughts on my portfolio! You can reach out to me on Linke
 ## 🙏 Acknowledgments 🙏
 
 I would like to thank all the developers and resources that made this project possible.
+
 
