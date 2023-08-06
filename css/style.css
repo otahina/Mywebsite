@@ -10,7 +10,7 @@
   html, body {
     font-size: 100%;
     font-family: 'Lobster', cursive;
-    background-color: white;
+    background: linear-gradient(180deg, #cdffd8, #94b9ff);
     color: #fff;
     overflow-x: hidden;
     line-height: 1.5;
@@ -49,14 +49,15 @@ body, html {
 .container {
   display: flex;
   height: 100vh; /* This will make the container take up the full viewport height */
-  background-color: #f974a6;
 }
 
 .left.box {
-
+  background: #ffb5b3;
   border-style: None;
-  height: 100%;
-  width: 600px;
+  border-radius: 50px;
+  height: 630px;
+  width: 400px;
+  margin: 50px 20px 10px 20px
 }
 
 
@@ -108,18 +109,23 @@ body, html {
 
 .about-me {
   background-color: #00c4cc;
-  margin: 0px;
-  height: 100%;
+  margin: 50px 30px 10px 30px;
+  height: 200px;
+  border-radius: 50px;
 }
   
 .skills {
   background-color: #ffbd59;
-  height: 100%;
+  height: 200px;
+  margin: 50px 30px 10px 30px;
+  border-radius: 50px;
 }
 
 .projects {
   background-color: #a548ff;
-  height: 100%;
+  margin: 10px 30px 10px 30px;
+  height: 200px;
+  border-radius: 50px;
 }
 
 .copyright {
@@ -130,11 +136,17 @@ body, html {
 
 .contacts {
   background-color: #fa643f;
-  height: 100%;
+  margin: 10px 30px 10px 30px;
+  height: 200px;
+  border-radius: 50px;
 }
 
 .carrier {
-  height: 100%;
+  background-color: #ff5757;
+  margin: 10px 30px 10px 30px;
+  height: 200px;
+  border-radius: 50px;
+
 }
 
 /* Modal About Me */
