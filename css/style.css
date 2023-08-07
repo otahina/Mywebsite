@@ -58,7 +58,7 @@ body, html {
   background-color: rgba(255, 141, 137, 0.8); 
   border-style: None;
   border-radius: 50px;
-  height: 700px;
+  height: 720px;
   width: 400px;
   margin: 50px 20px 10px 20px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
@@ -80,6 +80,18 @@ body, html {
   display: grid;
   grid-template-columns: 1fr 1fr; /* This creates two equal width columns */
   grid-template-rows: repeat(3, 1fr); /* This creates three equal height rows */
+}
+
+.left.box h1{
+   color:  rgba(246, 76, 33, 1);
+}
+
+.left.box h4{
+  font-weight: lighter;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 16px;
+  padding: 0px;
+  margin-top: 20px;
 }
 
 .left.box p {
@@ -176,9 +188,9 @@ body, html {
 }
 
 .about-me {
-  background-color: rgba(40, 138, 213, 0.8);
-  margin: 50px 30px 10px 20px;
-  height: 200px;
+  background-color: rgba(3, 128, 223, 0.8);
+  margin: 50px 20px 12px 20px;
+  height: 220px;
   border-radius: 50px;
   transition: transform 0.3s ease;
   position: relative;
@@ -192,9 +204,9 @@ body, html {
 
   
 .skills {
-  background-color: rgba(222, 255, 75, 0.8);
-  height: 200px;
-  margin: 50px 30px 10px 20px;
+  background-color: rgba(75, 255, 81, 0.8);
+  height: 220px;
+  margin: 50px 25px 12px 15px;
   border-radius: 50px;
   transition: transform 0.3s ease;
   position: relative;
@@ -203,8 +215,8 @@ body, html {
 
 .projects {
   background-color: rgba(135, 21, 250, 0.8);
-  margin: 10px 30px 0px 20px;
-  height: 200px;
+  margin: 17px 20px 0px 20px;
+  height: 220px;
   border-radius: 50px;
   transition: transform 0.3s ease;
   position: relative;
@@ -212,18 +224,18 @@ body, html {
 }
 
 .copyright {
-  font-size: 18px;
-  background-color: rgba(0, 196, 204, 0.8);
-  height: 200px;
+  font-size: 20px;
+  background-color: rgba(2, 247, 255, 0.8);
+  height: 220px;
   border-radius: 50px;
-  margin: 0px 30px 10px 20px;
+  margin: 0px 30px 0px 15px;
   animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
 .contacts {
   background-color: rgba(246, 76, 33, 0.8);
-  margin: 0px 30px 10px 20px;
-  height: 200px;
+  margin: 0px 20px 0px 20px;
+  height: 220px;
   border-radius: 50px;
   transition: transform 0.3s ease;
   position: relative;
@@ -232,8 +244,8 @@ body, html {
 
 .carrier {
   background-color: rgba(251, 69, 69, 0.8);
-  margin: 10px 30px 0px 20px;
-  height: 200px;
+  margin: 17px 30px 0px 15px;
+  height: 220px;
   border-radius: 50px;
   transition: transform 0.3s ease;
   position: relative;
@@ -265,13 +277,8 @@ body, html {
 
 
 .white-circle-button:hover {
-  /* Change the button's background color when hovered */
   background-color: white;
-
-  /* Change the arrow's color when hovered */
   color: black;
-
-  /* Add a "pop" effect when hovered */
   transform: scale(1.1);
 }
 
@@ -281,13 +288,13 @@ body, html {
   display: none; 
   position: fixed; 
   z-index: 1000; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 70px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; 
-  background-color: rgba(178, 187, 190, 0.3); /* Opacity */
+  background-color: rgba(178, 187, 190, 0.8); /* Opacity */
 }
 
 .modal-content-about {
@@ -302,17 +309,30 @@ body, html {
 }
 
 .close {
-  color: black;
-  float: right;
+  margin-top:20px;
+  margin-right: 20px;
+  border-radius: 50%;  /* Round border for a circular shape */
+  border: 1px solid white;
   font-size: 40px;
-  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  line-height: 35px;  /* To center the 'x' vertically */
+  text-align: center;  /* To center the 'x' horizontally */
+  float: right;
 }
 
 .close:hover,
 .close:focus {
-  color: #2ca2b4;
   text-decoration: none;
   cursor: pointer;
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
 }
 
 .modal-content-about p{
@@ -478,12 +498,12 @@ body, html {
 /* Projects */
 
 .modal-content-projects {
-  background-color: #fefefe;
+  background: linear-gradient(125deg, #ff4e00,#ec9f05);
   color: black;
   margin:auto;
   padding: 20px 30px 0px 50px;
   border: 15px outset #00c4cc;
-  width: 80%;
+  width: 90%;
   height: 600px;
   overflow: auto; 
 }
@@ -552,59 +572,153 @@ body, html {
   
 }
 
-
-
 /* Contacts */
 
-
 .modal-content-contacts {
-  background-color: #fefefe;
+  background-image: 
+    linear-gradient(125deg, rgba(247, 117, 61, 0.7), rgba(236, 159, 5, 0.7)), 
+    url('../img/contact.jpeg'); 
+  background-size: cover; /* Ensures the image covers the whole element */
+  background-position: center; /* Center the background image */
   color: black;
-  margin:auto;
+  margin: auto;
   padding: 20px 30px 0px 50px;
-  border: 15px outset #00c4cc;
-  width: 80%;
-  height: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 90%;
+  height: 700px;
   overflow: auto; 
 }
 
-.modal-content-contacts p {
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1180px;  
+  position: relative;
+}
+
+.contact-info {
+  background-color:rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+  color: white; /* White text */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 390px;
+  margin-top: 0;
+  position:relative;
+  left: 62px;
+  top: 149px;
+  transition: none 0s ease 0s;
+  cursor: move;
+}
+
+.contact-info p {
+  margin: 20px 0; /* More space between lines */
+  font-size: 20px;
+
+}
+
+.contact-info i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.contact-info a {
+  color: white; 
+}
+
+.contact-info a:hover {
+  color: #00c4cc; /* Change color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.contact-form {
+  font-family: 'Courier New', Courier, monospace;
+  flex-basis: 40%;
+  background-color: #ffffff;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  height: auto;
+  margin-right:50px;
+  margin-top: 10px;
+  width: 500px;
+  position: relative;
+  left: 633px;
+  top: -287px;
+}
+
+.contact-form form label,
+.contact-form form input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-form form textarea {
+  width: 100%;
+  height: 200px; /* Fixed height, adjust this as needed */
+  resize: none; /* Prevents the textarea from being manually resized */
+  margin-bottom: 10px;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"] {
+  height: 35px; 
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-form form textarea {
+  height: 100px; 
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-form form input[type="text"]:focus,
+.contact-form form input[type="email"]:focus,
+.contact-form form textarea:focus {
+  outline: none; 
+}
+
+.contact-form form input[type="submit"] {
+  background-color: #00c4cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Full width button */
+  padding: 15px; /* Increase padding to make the button larger */
+  font-size: 18px; /* Increase font size */
+}
+
+.contact-form form input[type="submit"]:hover {
+  background-color: #0099a3;
+}
+
+.modal-content-contacts h4{
+  text-align: center;
+  color: #0099a3;
+  font-size: 50px;
+  padding-top: 20px;
+  word-spacing: 20px;
+}
+
+.modal-content-contacts h5{
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
-  font-weight: 600;
   font-size: 20px;
-  margin-top: 10px;
-}
-
-.contact-icons {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 50px 10px 0px 10px;
-}
-
-#linkedin {
-  color: #0077b5;
-}
-
-#linkedin:hover{
-  color:#7f87ff;
-}
-
-#github:hover{
-  color:#7f87ff;
-}
-
-#email {
-  color:#f4b46a;
-}
-
-#email:hover{
-  color:#a1a1a1;
-}
-
-.contact-icon {
-  font-size: 50px;
-  transition: color 0.3s ease;
+  color:white;
+  padding: 10px;
+  font-weight: 200;
+  margin: 0px 100px 10px 70px;
 }
 
 
