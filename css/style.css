@@ -10,7 +10,7 @@
   html, body {
     font-size: 100%;
     font-family: 'Lobster', cursive;
-    background: linear-gradient(180deg, #00BFF1,#004b84);
+    background: linear-gradient(125deg, #ffde59,#ff914d);
     color: #fff;
     overflow-x: hidden;
     line-height: 1.5;
@@ -50,7 +50,7 @@ body, html {
   display: flex;
   height: 100vh; /* This will make the container take up the full viewport height */
   position: relative;
-  z-index: 2;
+  z-index: 0;
 }
 
 
@@ -147,8 +147,50 @@ body, html {
   }
 }
 
+/* Animated background */
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; 
+}
+
+.bubble {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  animation: float calc(4s * var(--random)) ease-in-out infinite, appear 0.5s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(var(--x), var(--y));
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(var(--x) * 3), calc(var(--y) * 3));
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
 .about-me {
-  background-color: rgba(9, 81, 135, 0.8);
+  background-color: rgba(40, 138, 213, 0.8);
   margin: 50px 30px 10px 20px;
   height: 200px;
   border-radius: 50px;

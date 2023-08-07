@@ -25,3 +25,22 @@
       console.warn(`No .close element found in ${section}-modal`);
     }
   });
+
+// Bubbles
+
+const bubbles = document.querySelectorAll('.bubble');
+
+bubbles.forEach(bubble => {
+  const size = Math.random() * 200;
+  bubble.style.width = `${size}px`;
+  bubble.style.height = `${size}px`;
+
+  const position = {
+    x: Math.random() * window.innerWidth - size / 2,
+    y: Math.random() * window.innerHeight - size / 2
+  };
+  bubble.style.setProperty('--x', `${position.x}px`);
+  bubble.style.setProperty('--y', `${position.y}px`);
+
+  bubble.style.setProperty('--random', Math.random());
+});
