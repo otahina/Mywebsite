@@ -48,3 +48,4 @@ window.onload = function() {
       console.warn(`No .close element found in ${section}-modal`);
     }
   });
+}
