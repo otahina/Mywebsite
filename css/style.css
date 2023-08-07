@@ -373,7 +373,7 @@ body, html {
 
 .modal-content-skills {
   background-image:
-  linear-gradient(125deg, rgba(124, 255, 203, 0.7), rgba(116, 242, 206, 0.7)), 
+  linear-gradient(125deg, rgba(124, 255, 203, 0.7), rgba(111, 255, 54, 0.7)), 
     url('../img/record.jpg'); 
   background-size: cover;
   background-position: center;
@@ -404,6 +404,10 @@ body, html {
   font-weight: 600;
 }
 
+.skills-section p {
+  color: white;
+}
+
 .programming-list {
   list-style: none;
   padding: 0px;
@@ -412,15 +416,14 @@ body, html {
 }
 
 .programming-item {
-  margin-right: 30px;
-  padding: 10px 10px;
-  border: 5px solid #68e5e9;
-  border-radius: 40px;
-  display: inline-block;
-  width: 200px;
-  text-align: center;
-  background-color: #68e5e9;
-  cursor: pointer;
+  display: flex;
+  align-items: center; 
+}
+
+.programming-item img {
+  width: 60px; 
+  height: 60px; 
+  margin-right: 50px; 
 }
 
 
