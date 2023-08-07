@@ -34,13 +34,23 @@ bubbles.forEach(bubble => {
   const size = Math.random() * 200;
   bubble.style.width = `${size}px`;
   bubble.style.height = `${size}px`;
+  bubble.style.left = `${Math.random() * 100}%`;
+  bubble.style.animationDuration = `${5 + Math.random() * 5}s`; // Random duration between 2s and 5s
+});
 
-  const position = {
-    x: Math.random() * window.innerWidth - size / 2,
-    y: Math.random() * window.innerHeight - size / 2
-  };
-  bubble.style.setProperty('--x', `${position.x}px`);
-  bubble.style.setProperty('--y', `${position.y}px`);
+// Button hover
 
-  bubble.style.setProperty('--random', Math.random());
+const buttonIds = ['about-me-button', 'skills-button', 'projects-button', 'carrier-button', 'contacts-button'];
+
+buttonIds.forEach(buttonId => {
+  const button = document.querySelector(`#${buttonId}`);
+  const box = button.previousElementSibling; // gets the sibling element that comes before the button
+
+  button.addEventListener('mouseenter', function() {
+    box.classList.add('hover');
+  });
+
+  button.addEventListener('mouseleave', function() {
+    box.classList.remove('hover');
+  });
 });
