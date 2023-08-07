@@ -1,27 +1,4 @@
-window.onload = function() {
-  // Fireworks code
-  var fireworks = new Fireworks({
-    target: 'fireworks',  // id of the element
-    hue: 360,
-    brightness: { min: 1, max: 40 },
-    startDelay: 30,
-    minDelay: 70,
-    maxDelay: 100,
-    acceleration: 0.5,
-    intensity: 29.22,
-    opacity: 0.3,
-    friction: 1.00,
-    gravity: 3.04,
-    particles: 46,
-    trace: 5,
-    traceSpeed: 30,
-    explosion: 3,
-    autoresize: true,
-    bound: { x: 0, y: 0, width: '100vw', height: '100vh' },
-  });
-  fireworks.start();
-
-  // Modal code
+// Modal code
   function showModal(modalId) {
     var modal = document.getElementById(`${modalId}-modal`);
     modal.style.display = 'block';
@@ -48,4 +25,3 @@ window.onload = function() {
       console.warn(`No .close element found in ${section}-modal`);
     }
   });
-}
