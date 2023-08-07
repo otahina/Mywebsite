@@ -10,7 +10,7 @@
   html, body {
     font-size: 100%;
     font-family: 'Lobster', cursive;
-    background: linear-gradient(125deg, #ffde59,#ff914d);
+    background: linear-gradient(125deg, rgba(247, 117, 61, 1), rgba(236, 159, 5, 1));
     color: #fff;
     overflow-x: hidden;
     line-height: 1.5;
@@ -56,6 +56,13 @@ body, html {
 
 .left.box {
   background-color: rgba(255, 141, 137, 0.8); 
+  /*
+  background-image: 
+    linear-gradient(125deg, rgba(247, 117, 61, 0.7), rgba(236, 159, 5, 0.7)), 
+    url('../img/test.jpeg');
+  background-size: cover;
+  background-position: center; 
+  */
   border-style: None;
   border-radius: 50px;
   height: 720px;
@@ -365,22 +372,28 @@ body, html {
 /* Modal Skills */
 
 .modal-content-skills {
-  background-color: #fefefe;
+  background-image:
+  linear-gradient(125deg, rgba(124, 255, 203, 0.7), rgba(116, 242, 206, 0.7)), 
+    url('../img/record.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: black;
-  margin:auto;
+  margin: auto;
   padding: 20px 30px 0px 50px;
-  border: 15px outset #00c4cc;
-  width: 80%;
-  height: 600px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 90%;
+  height: 700px;
   overflow: auto; 
 }
 
-#record {
-  margin: 0px;
-  height: 70px;
-  width: 50px;
-  padding-bottom: 20px;
-  margin-right: 20px;
+.modal-content-skills h5{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  padding-top: 20px;
+  word-spacing: 20px;
 }
 
 .skills-section {
@@ -408,12 +421,6 @@ body, html {
   text-align: center;
   background-color: #68e5e9;
   cursor: pointer;
-}
-
-.skills-section h4{
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 20px;
 }
 
 
@@ -578,8 +585,8 @@ body, html {
   background-image: 
     linear-gradient(125deg, rgba(247, 117, 61, 0.7), rgba(236, 159, 5, 0.7)), 
     url('../img/contact.jpeg'); 
-  background-size: cover; /* Ensures the image covers the whole element */
-  background-position: center; /* Center the background image */
+  background-size: cover;
+  background-position: center; 
   color: black;
   margin: auto;
   padding: 20px 30px 0px 50px;
