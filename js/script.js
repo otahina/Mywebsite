@@ -48,8 +48,3 @@ window.onload = function() {
       console.warn(`No .close element found in ${section}-modal`);
     }
   });
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 99a9de290686bbff2aa0268d2db7a549f7c1f5da
