@@ -396,7 +396,7 @@ body, html {
   word-spacing: 20px;
 }
 
-.skills-section {
+.skills-section, .skills-section2 {
   margin-top: 20px;
   width: 100%;
   max-width: 1100px;
@@ -404,22 +404,34 @@ body, html {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-section p {
   color: white;
   font-size: 20px;
-  margin-bottom: 15px;
-  border: 2px solid rgba(0, 0, 0, 1);
   background-color: rgba(42, 24, 24, 0.6);
   border-radius: 20px;
   text-align:center;
-  margin-right: 0;
   width: 200px;
   height: 45px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 6px;
+  margin: 0 auto 30px auto;
+}
+
+.skills-section2 p {
+  color: white;
+  font-size: 20px;
+  background-color: rgba(42, 24, 24, 0.6);
+  border-radius: 20px;
+  text-align:center;
+  width: 300px;
+  height: 45px;
+  padding-top: 6px;
+  margin: 0 auto 30px auto;
 }
 
 .programming-list {
@@ -429,7 +441,7 @@ body, html {
   margin-bottom: 10px;
 }
 
-.programming-item {
+.programming-item, .tools-item{
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -437,6 +449,20 @@ body, html {
 
 .programming-item img {
   width: 60px; 
+  height: 60px; 
+  margin-right: 70px; 
+  position: center;
+}
+
+.tools-item img {
+  width: 60px; 
+  height: 60px; 
+  margin-right: 70px; 
+  position: center;
+}
+
+#mongo {
+  width: 30px; 
   height: 60px; 
   margin-right: 70px; 
   position: center;
@@ -451,7 +477,7 @@ body, html {
 .tooltip .tooltiptext {
   visibility: hidden;
   width:120px;
-  background-color: #555;
+  background-color: rgba(42, 24, 24, 0.6);
   color: #fff;
   text-align: center;
   border-radius: 10px;
@@ -477,17 +503,19 @@ body, html {
   margin-bottom: 10px;
 }
 
-.tools-item {
-  margin-right: 30px;
-  padding: 14px 20px;
-  border: 5px solid #68e9a4;
-  border-radius: 40px;
-  display: inline-block;
-  width: 300px;
-  height: 60px;
-  text-align: center;
-  background-color: #68e9a4;
-  cursor: pointer;
+.skills-section-lg p {
+  color: white;
+  font-size: 20px;
+  background-color: rgba(42, 24, 24, 0.6);
+  border-radius: 20px;
+  text-align:center;
+  width: 200px;
+  height: 45px;
+  padding-top: 6px;
+  margin: 20px auto 30px auto;
+  position:relative;
+  left: 270px;
+  top: 0px;
 }
 
 .skills-section-lg {
@@ -496,6 +524,8 @@ body, html {
   margin-left: 10px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-section-lg h4 {
@@ -506,12 +536,38 @@ body, html {
 .language-name {
   font-size: 18px;
   margin-left: 5px;
+  position: relative;
+  left: 130px;
+  top: 22px;
+}
+
+#japanese {
+  font-size: 18px;
+  margin-left: 5px;
+  position: relative;
+  left: 70px;
+  top: 22px;
+}
+
+#japan {
+  position: relative;
+  left: 63px;
+  top: 20px;
+}
+
+.language img {
+  position: relative;
+  left: 133px;
+  top: 20px;
 }
 
 .progress {
   background-color: #000000;
   border-radius: 50px;
   height: 25px;
+  position: relative;
+  left: 288px;
+  top: -6px;
 }
 
 .progress-bar {
@@ -526,6 +582,9 @@ body, html {
   width: 800px;
   text-align: center;
   padding-left: 200px;
+  position: relative;
+  left: 344px;
+  top:0;
 }
 
 .others-list {
