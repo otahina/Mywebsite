@@ -55,20 +55,21 @@ body, html {
 
 
 .left.box {
-  background-color: rgba(255, 141, 137, 0.8); 
-  /*
-  background-image: 
-    linear-gradient(125deg, rgba(247, 117, 61, 0.7), rgba(236, 159, 5, 0.7)), 
-    url('../img/test.jpeg');
+  background-image:
+    linear-gradient(125deg, rgba(246, 234, 16, 0.7), rgba(236, 105, 5, 0.7)), 
+    url('../img/me.png');
   background-size: cover;
-  background-position: center; 
-  */
+  background-repeat: no-repeat;
+  background-position: 60%;
   border-style: None;
   border-radius: 50px;
   height: 720px;
   width: 400px;
   margin: 50px 20px 10px 20px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
+  overflow: hidden; 
+  z-index: 1;
+  position: relative;
 }
 
 
@@ -90,7 +91,13 @@ body, html {
 }
 
 .left.box h1{
-   color:  rgba(246, 76, 33, 1);
+   color: white;
+   position: relative;
+   left: 1px;
+   top: -257px;
+   transition: none 0s ease 0s;
+   cursor: move;
+   width: 360px;
 }
 
 .left.box h4{
@@ -98,7 +105,10 @@ body, html {
   font-family:'Courier New', Courier, monospace;
   font-size: 16px;
   padding: 0px;
-  margin-top: 20px;
+  margin-top: 0;
+  position: relative;
+  left: 16px;
+  top: -243px;
 }
 
 .left.box p {
