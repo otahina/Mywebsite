@@ -56,7 +56,7 @@ body, html {
 
 .left.box {
   background-image:
-  linear-gradient(-45deg, rgba(249, 176, 112, 0.5) 0%, rgba(254, 20, 118, 0.5) 100%),
+  linear-gradient(-45deg, rgba(249, 176, 112, 0.2) 0%, rgba(254, 20, 118, 0.2) 100%),
     url('../img/meme.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,6 +70,7 @@ body, html {
   overflow: hidden; 
   z-index: 1;
   position: relative;
+  border: 5px solid #000052;
 }
 
 
@@ -90,13 +91,26 @@ body, html {
   grid-template-rows: repeat(3, 1fr); /* This creates three equal height rows */
 }
 
+#disc h2{
+  font-size: 35px;
+  margin-right: 20px;
+  color: #000052;
+  position: relative;
+  left: -12px;
+  top: 153px;
+  transition: none 0s ease 0s;
+  cursor: move;
+  width: 400px;
+}
+
+
 #disc h1{
   font-size: 35px;
   margin-right: 20px;
   color: #000052;
   position: relative;
-  left: -30px;
-  top: 100px;
+  left: 30px;
+  top: 145px;
   transition: none 0s ease 0s;
   cursor: move;
   width: 400px;
@@ -107,8 +121,8 @@ body, html {
   font-size: 20px;
   padding: 0px;
   position: relative;
-  left:70px;
-  top: 103px;
+  left:160px;
+  top: 140px;
   text-align: left;
   color: #000052;
 }
@@ -122,9 +136,9 @@ body, html {
   position: absolute;
   background-size: contain;
   padding: 0;
-  width: 340px;
-  height: 300px;
-  left: 20px;
+  width: 450px;
+  height: 450px;
+  left: -50px;
   top: -34px;
   transition: none 0s ease 0s;
   cursor: move;
@@ -231,6 +245,8 @@ body, html {
   transition: transform 0.3s ease;
   position: relative;
   animation: 1s ease-out 0s 1 slideInFromTop;
+  border: 5px solid #000052;
+  color: #000052;
 }
 
 .con.hover {
@@ -247,6 +263,8 @@ body, html {
   transition: transform 0.3s ease;
   position: relative;
   animation: 1s ease-out 0s 1 slideInFromRight;
+  border: 5px solid #000052;
+  color: #000052;
 }
 
 .projects {
@@ -257,6 +275,8 @@ body, html {
   transition: transform 0.3s ease;
   position: relative;
   animation: 1s ease-out 0s 1 slideInFromRight;
+  border: 5px solid #000052;
+  color: #000052;
 }
 
 .copyright {
@@ -266,6 +286,8 @@ body, html {
   border-radius: 50px;
   margin: 0px 30px 0px 15px;
   animation: 1s ease-out 0s 1 slideInFromBottom;
+  border: 5px solid #000052;
+  color: #000052;
 }
 
 .contacts {
@@ -276,6 +298,8 @@ body, html {
   transition: transform 0.3s ease;
   position: relative;
   animation: 1s ease-out 0s 1 slideInFromBottom;
+  border: 5px solid #000052;
+  color: #000052;
 }
 
 .carrier {
@@ -286,6 +310,8 @@ body, html {
   transition: transform 0.3s ease;
   position: relative;
   animation: 1s ease-out 0s 1 slideInFromRight;
+  border: 5px solid #000052;
+  color: #000052;
 }
 
 /* For buttons */
@@ -297,12 +323,12 @@ body, html {
   width: 30px;
   height: 30px;
   border-radius: 50px;
-  border: 1px solid white;
+  border: 3px solid #000052;
   background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color:  #000052;
   font-size: 15px;
   outline: none;
   cursor: pointer;
@@ -634,31 +660,46 @@ body, html {
 /* Projects */
 
 .modal-content-projects {
-  background: linear-gradient(125deg, #ff4e00,#ec9f05);
+  background-image:
+  linear-gradient(125deg, rgba(248, 52, 246, 0.7), rgba(152, 38, 252, 0.7)), 
+    url('../img/powerfulgirl.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: black;
-  margin:auto;
+  margin: auto;
   padding: 20px 30px 0px 50px;
-  border: 15px outset #00c4cc;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   width: 90%;
-  height: 600px;
+  height: 700px;
   overflow: auto; 
 }
 
-#computer {
-  margin: 0px;
-  height: 75px;
-  width: 60px;
-  padding-bottom: 20px;
-  margin-right: 20px;  
+.modal-content-projects h5{
+  text-align: center;
+  color: rgb(250, 250, 107);
+  font-size: 50px;
+  padding-top: 20px;
+  word-spacing: 20px;
 }
 
 .project {
   margin: 20px;
   font-family: 'Courier New', Courier, monospace;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  padding: 20px;
+  background-color: rgba(42, 24, 24, 0.5);
 }
 
-.project h3 {
-  color: rgb(255, 106, 0);
+.project h3{
+  background-color: rgba(42, 24, 24, 0.5);
+  border-radius: 20px;
+  width: 790px;
+  padding: 10px 20px 10px 20px;
+  color: white;
   font-size: 28px;
   margin-bottom: 8px;
 }
@@ -683,14 +724,28 @@ body, html {
 /* Carrier */
 
 .modal-content-carrier {
-  background-color: #fefefe;
+  background-image:
+  linear-gradient(-45deg, rgba(250, 124, 99, 0.7), rgba(255, 110, 20, 0.7)),
+    url('../img/car.jpeg'); 
+  background-size: cover;
+  background-position: 110% 30%;
+  background-repeat: no-repeat;
   color: black;
-  margin:auto;
+  margin: auto;
   padding: 20px 30px 0px 50px;
-  border: 15px outset #00c4cc;
-  width: 80%;
-  height: 600px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 90%;
+  height: 700px;
   overflow: auto; 
+}
+
+.modal-content-carrier h5{
+  text-align: center;
+  color: #94bcf8;
+  font-size: 50px;
+  padding-top: 20px;
+  word-spacing: 20px;
 }
 
 .carrier-section{
@@ -698,14 +753,16 @@ body, html {
   margin: 10px 20px 10px 20px;
 }
 
-.carrier-section h2{
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  background-color: rgba(38, 251, 255, 0.5);
-  border-radius: 40px;
-  padding: 20px;
-  
+.milestones-section ul {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 20px; /* Indents the list */
+}
+
+.milestones-section li {
+  font-size: 16px;
+  line-height: 1.5; /* Adjusts the spacing between lines */
+  color: #444;
+  margin-bottom: 10px; /* Adds space between list items */
 }
 
 /* Contacts */
