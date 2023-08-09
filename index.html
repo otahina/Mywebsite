@@ -30,8 +30,11 @@
       <div class="bubble"></div>
     </div>
     <div class="left box">
-        <h1>Hi, I'm Hina Ota!</h1>
-        <h4>Software Engineer, tech enthusiast</h4>
+        <h1>Hi, I'm <span id=name>Hina Ota</span>.</h1>
+        <div id = disc>
+          <h4>Software Engineer && </h4>
+          <h4>Tech enthusiast</h4>
+      </div>
     </div>
     <div class="right">
       <div class="box about-me">
@@ -73,8 +76,7 @@
 <div id="about-me-modal" class="modal">
   <div class="modal-content-about">
     <span class="close">&times;</span>
-    <img id="car_oldies" src="./img/car_oldies.png">
-    <h4 class="gradient-text">About Me</h4>
+    <h5>About Me</h5>
     <p>Hi, I'm Hina Ota, a <span class="bolder-text">Computer Science student </span>with a passion for solving problems and building fun projects. Currently studying at the University of Debrecen in Hungary, I have been improving my skills in various programming languages and software development methodologies. My ultimate goal is to become a <span class="bolder-text">Software engineer</span>, a path that allows me to leverage my love for technology and my knack for problem-solving.</p>
     <p>Through my academic and personal projects, I've gained experience in a range of technologies including <span class="bolder-text">Python, Java, JavaScript, HTML&CSS</span>. I particularly enjoy working on making web applications powered by AI, including front-end and back-end.</p>
     <p>In my spare time, I love diving into new technologies, and constantly learning to stay on top of industry trends. I’m having so much fun to be creative, and make things efficient.</p>
@@ -234,11 +236,38 @@
     </div>
     <div class="skills-section">
       <p>Soft skills</p>
-        <ul class="others-list">
-          <li class="others-item">Web Design</li>
-          <li class="others-item">Communication</li>
-          <li class="others-item">Problem Solving</li>
-        </ul>
+      <ul class="soft-skills-list">
+        <li class="soft-item">
+          <div class="tooltip">
+            <img src="./img/communication.png" alt="Communication"> 
+            <span class="tooltiptext">Communication</span> 
+          </div>
+        </li>
+        <li class="tools-item">
+          <div class="tooltip">
+            <img src="./img/problem-solving.png" alt="Problem-solving"> 
+            <span class="tooltiptext">Problem-solving</span> 
+          </div>
+        </li>
+        <li class="tools-item">
+          <div class="tooltip">
+            <img id="web-design" src="./img/web-design.png" alt="web-design"> 
+            <span class="tooltiptext">Web Design</span> 
+          </div>
+        </li>
+        <li class="tools-item">
+          <div class="tooltip">
+            <img src="./img/teamwork.png" alt="Teamwork"> 
+            <span class="tooltiptext">Teamwork</span> 
+          </div>
+        </li>
+        <li class="tools-item">
+          <div class="tooltip">
+            <img src="./img/drawing.png" alt="Drawing"> 
+            <span class="tooltiptext">Drawing</span> 
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -297,7 +326,7 @@
         </p>
         <p>
             <i class="fas fa-file-download"></i> 
-            <a href="path/to/your/resume.pdf" download>Download my resume</a>
+            <a href="CV.pdf" download>Download my resume</a>
         </p>
       </div>
       <div class="contact-form">

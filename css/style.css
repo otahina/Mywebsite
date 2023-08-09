@@ -10,7 +10,7 @@
   html, body {
     font-size: 100%;
     font-family: 'Lobster', cursive;
-    background: linear-gradient(125deg, rgba(247, 117, 61, 1), rgba(236, 159, 5, 1));
+    background:  radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
     color: #fff;
     overflow-x: hidden;
     line-height: 1.5;
@@ -56,7 +56,7 @@ body, html {
 
 .left.box {
   background-image:
-    linear-gradient(125deg, rgba(246, 234, 16, 0.7), rgba(236, 105, 5, 0.7)), 
+  linear-gradient(-45deg, rgba(255, 199, 150, 0.7) 0%, rgba(255, 107, 149, 0.7) 100%),
     url('../img/me.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -91,24 +91,34 @@ body, html {
 }
 
 .left.box h1{
-   color: white;
-   position: relative;
-   left: 1px;
-   top: -257px;
-   transition: none 0s ease 0s;
-   cursor: move;
-   width: 360px;
+  font-size: 35px;
+  margin-right: 20px;
+  color: #000052;
+  position: relative;
+  left: -10px;
+  top: -237px;
+  transition: none 0s ease 0s;
+  cursor: move;
+  width: 400px;
 }
 
 .left.box h4{
-  font-weight: lighter;
-  font-family:'Courier New', Courier, monospace;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 205x;
   padding: 0px;
-  margin-top: 0;
   position: relative;
-  left: 16px;
+  left:-20px;
   top: -243px;
+  text-align: left;
+  color: #000052;
+}
+
+#name {
+  color:rgb(254, 61, 116);
+}
+
+#disc {
+  margin-top: 10px;
 }
 
 .left.box p {
@@ -205,7 +215,7 @@ body, html {
 }
 
 .about-me {
-  background-color: rgba(3, 128, 223, 0.8);
+  background: linear-gradient(-45deg, rgba(56, 188, 253, 0.7),  rgba(3, 128, 223, 0.7));
   margin: 50px 20px 12px 20px;
   height: 220px;
   border-radius: 50px;
@@ -221,7 +231,7 @@ body, html {
 
   
 .skills {
-  background-color: rgba(75, 255, 81, 0.8);
+  background: linear-gradient(-45deg, rgba(168, 252, 157, 0.7), rgba(75, 255, 81, 0.7));
   height: 220px;
   margin: 50px 25px 12px 15px;
   border-radius: 50px;
@@ -250,7 +260,7 @@ body, html {
 }
 
 .contacts {
-  background-color: rgba(246, 76, 33, 0.8);
+  background: linear-gradient(-45deg, rgb(245, 135, 0) 11.1%, rgb(255, 67, 5) 95.3%);
   margin: 0px 20px 0px 20px;
   height: 220px;
   border-radius: 50px;
@@ -315,13 +325,19 @@ body, html {
 }
 
 .modal-content-about {
-  background-color: #fefefe;
+  background-image:
+  linear-gradient(125deg, rgba(56, 188, 253, 0.7),  rgba(3, 128, 223, 0.7)), 
+    url('../img/car.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: black;
-  margin:auto;
+  margin: auto;
   padding: 20px 30px 0px 50px;
-  border: 15px outset #00c4cc;
-  width: 80%;
-  height: 600px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 90%;
+  height: 700px;
   overflow: auto; 
 }
 
@@ -352,6 +368,14 @@ body, html {
   transform: scale(1.1);
 }
 
+.modal-content-about h5{
+  text-align: center;
+  color: #dc5e34;
+  font-size: 50px;
+  padding-top: 20px;
+  word-spacing: 20px;
+}
+
 .modal-content-about p{
   font-family:'Courier New', Courier, monospace;
   font-weight: 500;
@@ -371,19 +395,12 @@ body, html {
   -webkit-background-clip: text;
 }
 
-#car_oldies {
-  margin: 0px;
-  height: 90px;
-  width: 90px;
-  padding-bottom: 10px;
-  margin-right: 20px;
-}
 
 /* Modal Skills */
 
 .modal-content-skills {
   background-image:
-  linear-gradient(125deg, rgba(139, 255, 124, 0.7), rgba(75, 255, 81, 0.7)), 
+  linear-gradient(125deg, rgba(168, 252, 157, 0.7), rgba(75, 255, 81, 0.7)), 
     url('../img/superman.jpeg'); 
   background-size: cover;
   background-position: center;
@@ -451,7 +468,7 @@ body, html {
   margin-bottom: 10px;
 }
 
-.programming-item, .tools-item{
+.programming-item, .tools-item, .soft-item{
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -471,6 +488,13 @@ body, html {
   position: center;
 }
 
+.soft-item img {
+  width: 70px; 
+  height: 70px; 
+  margin-right: 70px; 
+  position: center;
+}
+
 #mongo {
   width: 30px; 
   height: 60px; 
@@ -486,7 +510,7 @@ body, html {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width:120px;
+  width:125px;
   background-color: rgba(42, 24, 24, 0.6);
   color: #fff;
   text-align: center;
@@ -544,7 +568,7 @@ body, html {
 }
 
 .language-name {
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 5px;
   position: relative;
   left: 130px;
@@ -588,33 +612,27 @@ body, html {
 }
 
 .progress-text {
-  font-size: 16px;
+  font-size: 18px;
   width: 800px;
   text-align: center;
   padding-left: 200px;
   position: relative;
   left: 344px;
-  top:0;
+  top:-30px;
 }
 
-.others-list {
+.soft-skills-list {
   list-style: none;
   padding: 0px;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
-.others-item {
-  margin-right: 30px;
-  padding: 14px 20px;
-  border: 5px solid #7f87ff;
-  border-radius: 40px;
-  display: inline-block;
-  width: 300px;
-  height: 60px;
-  text-align: center;
-  background-color: #7f87ff;
-  cursor: pointer;
+#web-design {
+  width: 70px; 
+  height: 50px; 
+  margin-right: 70px; 
+  position: center;
 }
 
 /* Projects */
