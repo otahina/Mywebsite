@@ -821,7 +821,7 @@ body, html {
 .project h3{
   background-color: rgba(42, 24, 24, 0.5);
   border-radius: 20px;
-  width: 790px;
+  width: 800px;
   padding: 10px 20px 10px 20px;
   color: white;
   font-size: 28px;
@@ -832,17 +832,20 @@ body, html {
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 8px;
+  margin-left: 10px;
 }
 
 .project p{
-  margin-bottom: 20px;
+  margin: 20px 20px 20px 20px;
 }
 
+
 #pp_preview {
-  position: center;
   padding: 0px 100px 0px 80px;
   height: 500px;
-  width:  900px;
+  width:  1000px;
+  left: 130px;
+  top: 0px;
 }
 
 /* Carrier */
