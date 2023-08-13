@@ -1,0 +1,25 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "This is a portfolio website for myself.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otahina/Mywebsite.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "otahina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otahina/Mywebsite/issues"
+  },
+  "homepage": "https://github.com/otahina/Mywebsite#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
