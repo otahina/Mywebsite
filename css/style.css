@@ -64,7 +64,7 @@ body, html {
   border-style: None;
   border-radius: 50px;
   height: 730px;
-  width: 400px;
+  width: 30%; 
   margin: 50px 20px 10px 20px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
   overflow: hidden; 
@@ -88,6 +88,7 @@ body, html {
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: 1fr 1fr; /* This creates two equal width columns */
+  grid-gap: 20px;
   grid-template-rows: repeat(3, 1fr); /* This creates three equal height rows */
 }
 
@@ -1092,11 +1093,36 @@ body, html {
   .right {
     grid-template-columns: 1fr; /* Change to one column layout */
     grid-template-rows: auto; /* Allow rows to take up as much space as needed */
+    grid-gap: 0;
   }
 
   .left.box {
     width: 90%; 
+    height: 550px;
     margin: 30px 20px 10px 15px;
+    background-position: 110% 97%;
+    background-size: 130%;
+  }
+
+  #disc {
+    width: 400px;
+    height: 400px;
+  }
+
+  #disc h2{
+    left: -12px;
+    top: 140px;
+  }
+  
+  
+  #disc h1{
+    left: 30px;
+    top: 135px;
+  }
+  
+  #disc h4{
+    left:130px;
+    top: 125px;
   }
 
   .left.box p {
