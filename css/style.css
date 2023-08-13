@@ -1157,7 +1157,6 @@ body, html {
   }
 
   .modal-content-about,
-  .modal-content-skills,
   .modal-content-projects {
     width: 90%; /* Allow modal content to take up more width */
     height: auto;
@@ -1243,29 +1242,95 @@ body, html {
 
   /* modal skills */
 
-  .skills-section,
-  .skills-section-lg {
-    max-width: 100%; /* Allow skills section to take up full width */
+  .modal-content-skills {
+    width: 90%; /* Allow modal content to take up more width */
+    height: auto;
+    padding: 20px;
   }
 
-  .programming-item,
-  .tools-item,
-  .others-item {
-    width: auto; /* Allow items to take up as much width as needed */
-    white-space: nowrap; /* Prevent wrapping of text */
+  .programming-list, .tools-list {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap onto the next line */
+    justify-content: space-between; /* Even spacing between the items */
+    margin-bottom: 10px;
   }
+
+  .soft-skills-list {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap onto the next line */
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .programming-list li {
+    flex-basis: 33.33%; /* Each item will take up one-third of the container's width */
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+  }
+
+  .tools-list li {
+    flex-basis: 33.33%; /* Each item will take up one-third of the container's width */
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+  }
+
+  .soft-skills-list li {
+    flex: 0 0 calc(33.33% - 10px); /* Each item takes up one-third, minus a small gap */
+    box-sizing: border-box;
+    margin: 5px; /* Adds a small gap between the items */
+  }
+
+  .soft-skills-list li:nth-child(4),
+  .soft-skills-list li:nth-child(5) {
+    flex-basis: calc(50% - 10px); /* The last two items take up half the width, minus a small gap */
+  }
+
+  .tooltip .tooltiptext {
+    width:90px;
+    font-size: 12px;
+  }
+
+  .skills-section-lg p {
+    left: 0;
+    top: 0;
+  }
+
+  .language-name {
+    left: 0;
+    top: 0;
+  }
+
+  .progress {
+    left: 0;
+    top: 0;
+  }
+  
+  .language img {
+    left: 0;
+    top: 0;
+  }
+
 
   .progress-text {
-    width: auto; /* Allow text to take up as much width as needed */
-    padding-left: 0px; /* Remove unnecessary padding */
+    left: 110px;
+    top:0;
   }
 
-  #pp_preview {
-    padding: 0px 20px; /* Reduce padding */
-    height: auto; /* Maintain aspect ratio */
-    width: 100%; /* Allow image to take full width */
+  #japanese {
+    left: 0;
+    top: 0;
   }
 
+  #japan {
+    left: 0;
+    top: 0;
+  }
+  
 }
+
 
 
