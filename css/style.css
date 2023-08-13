@@ -1067,7 +1067,7 @@ body, html {
 
 /* For smartphone */
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
   /* Reset style sheet */
 
@@ -1102,12 +1102,61 @@ body, html {
   }
 
   .left.box {
-    width: 100%; /* Take up full width on small screens */
+    width: 90%; 
+    margin: 30px 20px 10px 15px;
   }
 
   .left.box p {
     font-size: 16px; /* Reduce font-size for mobile screens */
     width: 90%; /* Allow text to take more width */
+  }
+
+  .about-me {
+    background: linear-gradient(-45deg, rgba(56, 188, 253, 0.7),  rgba(3, 128, 223, 0.7));
+    margin: 10px 20px 12px 5px;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    position: relative;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+  }
+
+  .skills {
+    background: linear-gradient(-45deg, rgba(133, 248, 118, 0.7), rgba(75, 255, 81, 0.7));
+    margin: 10px 20px 12px 5px;
+    transition: transform 0.3s ease;
+    position: relative;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+
+  .projects {
+    background: linear-gradient(-45deg,rgba(248, 52, 246, 0.7), rgba(152, 38, 252, 0.7));
+    margin: 10px 20px 12px 5px;
+    transition: transform 0.3s ease;
+    position: relative;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+  
+  .carrier {
+    background: linear-gradient(-45deg, rgba(251, 69, 69, 0.7), rgba(251, 69, 69, 0.7));
+    margin: 10px 20px 12px 5px;
+    transition: transform 0.3s ease;
+    position: relative;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+
+  .contacts {
+    background: linear-gradient(-45deg, rgba(236, 159, 5, 0.7), rgba(247, 117, 61, 0.7));
+    margin: 10px 20px 12px 5px;
+    transition: transform 0.3s ease;
+    position: relative;
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+  }
+
+  .copyright {
+    font-size: 20px;
+    background: linear-gradient(-45deg, rgba(93, 248, 219, 0.7), rgba(7, 234, 255, 0.7));
+    margin: 10px 20px 12px 5px;
+    animation: 1s ease-out 0s 1 slideInFromBottom;
   }
 
   .img-me {
