@@ -635,11 +635,49 @@ body, html {
   position: center;
 }
 
+.white-con {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  border: white;
+  padding: 10px;
+  width: 70px; 
+  height: 70px; 
+  margin-right: 50px; 
+}
+
 #mongo {
-  width: 30px; 
-  height: 60px; 
-  margin-right: 70px; 
+  width: 40px; 
+  height: 50px;
   position: center;
+  padding-left: 10px;
+}
+
+#mysql {
+  width: 50px; 
+  height: 45px;
+  position: center;
+  padding-left: 5px;
+}
+
+#django {
+  width: 50px; 
+  height: 45px;
+  position: center;
+  padding-left: 0;
+}
+
+#python {
+  width: 50px; 
+  height: 50px;
+  position: center;
+  padding-left: 0;
+}
+
+#java {
+  width: 45px; 
+  height: 45px;
+  position: center;
+  padding-left: 0;
 }
 
 .tooltip {
@@ -847,9 +885,9 @@ body, html {
 .modal-content-carrier {
   background-image:
   linear-gradient(-45deg, rgba(250, 124, 99, 0.7), rgba(255, 110, 20, 0.7)),
-    url('../img/car.jpeg'); 
+    url('../img/test1.jpeg'); 
   background-size: cover;
-  background-position: 110% 30%;
+  background-position: center;
   background-repeat: no-repeat;
   color: black;
   margin: auto;
