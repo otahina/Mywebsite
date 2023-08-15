@@ -1225,8 +1225,7 @@ body, html {
     width: 90%; 
     height: 550px;
     margin: 30px 20px 10px 15px;
-    background-position: 110% 97%;
-    background-size: 130%;
+    background-position: 70%;
   }
 
   #disc {
@@ -1259,17 +1258,13 @@ body, html {
     background: linear-gradient(-45deg, rgba(56, 188, 253, 0.7),  rgba(3, 128, 223, 0.7));
     margin: 10px 20px 12px 5px;
     border-radius: 50px;
-    transition: transform 0.3s ease;
     position: relative;
-    animation: 1s ease-out 0s 1 slideInFromTop;
   }
 
   .skills {
     background: linear-gradient(-45deg, rgba(133, 248, 118, 0.7), rgba(75, 255, 81, 0.7));
     margin: 10px 20px 12px 5px;
-    transition: transform 0.3s ease;
     position: relative;
-    animation: 1s ease-out 0s 1 slideInFromRight;
   }
 
   .projects {
@@ -1307,11 +1302,14 @@ body, html {
     height: auto; /* Allow boxes to expand as needed */
   }
 
-  .modal-content-about,
-  .modal-content-projects {
-    width: 90%; /* Allow modal content to take up more width */
+  .modal-content-about {
+    width: 90%; 
     height: auto;
     padding: 20px;
+  }
+
+  .modal-content-about {
+    background-position: 10% 10%;
   }
 
   .picture-box {
@@ -1397,6 +1395,7 @@ body, html {
     width: 90%; /* Allow modal content to take up more width */
     height: auto;
     padding: 20px;
+    background-position: 40%;
   }
 
   .programming-list, .tools-list {
@@ -1467,8 +1466,9 @@ body, html {
 
 
   .progress-text {
-    left: 110px;
+    left: 50px;
     top:0;
+    width: 100px;
   }
 
   #japanese {
@@ -1480,8 +1480,62 @@ body, html {
     left: 0;
     top: 0;
   }
-  
+
+
+  /* Modal Project */
+
+  .modal-content-projects {
+    width: 90%; 
+    height: auto;
+    padding: 10px;
+    background-position: 90%;
+  }
+
+  .project {
+    margin: 10px;
+  }
+
+  .project h3{
+    width: 100%;
+  }
+
+  .project p {
+    width: 100%;
+    font-size: 15px;
+    margin: 5px;
+  }
+
+  #pp_preview {
+    width: 100%;
+    padding: 5px 0 0 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  /* Modal carrier */
+
+  .modal-content-carrier {
+    width: 90%; 
+    height: auto;
+    padding: 10px;
+    background-position: 65%;
+  }
+
+  .carrier-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .carrier-box {
+    width: 200px;
+    margin: 0;
+  }
+
+  .carrier-container ul li .carrier-time span {
+    left: -60px;
+  }
+
+  /* Modal contact */
+
 }
-
-
-
