@@ -522,7 +522,7 @@ body, html {
   height: 100%;
   background: rgba(56, 188, 253, 0.2);
   transform: skewX(45deg) translateX(150px);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .social-media-box ul li:hover::before{
@@ -901,7 +901,7 @@ body, html {
 
 .modal-content-carrier h5{
   text-align: center;
-  color: #94bcf8;
+  color: #000052;
   font-size: 50px;
   padding-top: 20px;
   word-spacing: 20px;
@@ -912,16 +912,103 @@ body, html {
   margin: 10px 20px 10px 20px;
 }
 
-.milestones-section ul {
-  list-style-type: none; /* Removes bullet points */
-  padding-left: 20px; /* Indents the list */
+.carrier-container {
+  margin: 40px 40px;
+  font-family: 'Courier New', Courier, monospace;
+  background: rgba(42, 24, 24, 0.5);
+  border-radius: 20px;
+  width: 1100px;
+  padding: 10px;
 }
 
-.milestones-section li {
-  font-size: 16px;
-  line-height: 1.5; /* Adjusts the spacing between lines */
-  color: #444;
-  margin-bottom: 10px; /* Adds space between list items */
+.carrier-container ul{
+  list-style: none;
+  margin: 10px 0 0 20px;
+  padding: 0;
+  position: relative;
+}
+
+.carrier-container ul::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 100%;
+  border: 2px dashed white;
+}
+
+.carrier-container ul li {
+  margin: 50px 60px;
+  position: relative;
+}
+
+.carrier-box {
+  width: 800px;
+  background: linear-gradient(-45deg, rgba(60, 89, 163, 0.7), rgba(47, 164, 255, 0.7));
+  border-radius: 20px;
+  padding: 25px;
+  margin-left: 70px;
+  color: white;
+  font-weight: 600;
+}
+
+.carrier-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.carrier-info { 
+  font-weight: 200;
+}
+
+.focus {
+  font-weight: 600;
+}
+
+.carrier-container ul li > span {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -60px;
+  width: 0px;
+  height: 100%;
+  border: 2px solid white;
+}
+
+.carrier-container ul li > span::before, .carrier-container ul li > span::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+  position: absolute;
+  border-radius: 50%;
+  left: -10px;
+  background: rgba(47, 164, 255, 1);
+}
+
+.carrier-container ul li > span::before{
+  top: -13px;
+}
+
+.carrier-container ul li > span:after{
+  top: 100%;
+}
+
+.carrier-container ul li .carrier-time span {
+  position: absolute;
+  width: 60px;
+  left: -30px;
+  text-align: right;
+  color: white;
+}
+
+.carrier-container ul li .carrier-time span:first-child{
+  top: 0;
+}
+
+.carrier-container ul li .carrier-time span:last-child{
+  top: 100%;
 }
 
 /* Contacts */
