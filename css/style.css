@@ -350,7 +350,7 @@ body, html {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; 
-  background-color: rgba(178, 187, 190, 0.8); /* Opacity */
+  background-color: rgba(178, 187, 190, 0.8); 
 }
 
 .modal-content-about {
