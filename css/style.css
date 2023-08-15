@@ -1538,4 +1538,35 @@ body, html {
 
   /* Modal contact */
 
+  .modal-content-contacts {
+    width: 90%; 
+    height: auto;
+    padding: 10px;
+    background-position: 45%;
+  }
+
+  .modal-content-contacts h4{
+    font-size: 45px;
+  }
+
+  .modal-content-contacts h5{
+    font-size: 20px;
+    color:white;
+    padding: 10px;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .contact-form {
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 }
