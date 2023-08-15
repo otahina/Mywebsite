@@ -2,8 +2,7 @@
 
 Welcome to the repository for my **personal website**! It's built with HTML, CSS, JavaScript. 
 
-
-https://github.com/otahina/Mywebsite/assets/108225969/ff91acce-d0d9-4ef8-a339-62548ff1ece2
+https://github.com/otahina/Mywebsite/assets/108225969/0c073ad2-2f25-40a5-82c0-e8fc5e85b1c3
 
 
 ## 🚀 Overview 🚀
@@ -40,8 +39,6 @@ If you want to view this project locally:
 
 I'd love to hear your thoughts on my portfolio! You can reach out to me on LinkedIn.
 
-## 🙏 Acknowledgments 🙏
 
-I would like to thank all the developers and resources that made this project possible.
 
 
