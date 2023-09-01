@@ -296,7 +296,7 @@ body, html {
   color: #000052;
 }
 
-.carrier {
+.career {
   background: linear-gradient(-45deg, rgba(251, 69, 69, 0.7), rgba(251, 69, 69, 0.7));
   margin: 17px 30px 0px 15px;
   height: 220px;
@@ -645,18 +645,11 @@ body, html {
   margin-right: 50px; 
 }
 
-#mongo {
-  width: 40px; 
-  height: 50px;
-  position: center;
-  padding-left: 10px;
-}
-
-#mysql {
+#postgresql {
   width: 50px; 
   height: 45px;
   position: center;
-  padding-left: 5px;
+  padding-left: 0;
 }
 
 #django {
@@ -880,9 +873,9 @@ body, html {
   top: 0px;
 }
 
-/* Carrier */
+/* Career */
 
-.modal-content-carrier {
+.modal-content-career {
   background-image:
   linear-gradient(-45deg, rgba(250, 124, 99, 0.7), rgba(255, 110, 20, 0.7)),
     url('../img/test1.jpeg'); 
@@ -899,7 +892,7 @@ body, html {
   overflow: auto; 
 }
 
-.modal-content-carrier h5{
+.modal-content-career h5{
   text-align: center;
   color: #000052;
   font-size: 50px;
@@ -907,12 +900,12 @@ body, html {
   word-spacing: 20px;
 }
 
-.carrier-section{
+.career-section{
   font-family: 'Courier New', Courier, monospace;
   margin: 10px 20px 10px 20px;
 }
 
-.carrier-container {
+.career-container {
   margin: 40px 40px;
   font-family: 'Courier New', Courier, monospace;
   background: rgba(42, 24, 24, 0.5);
@@ -921,14 +914,14 @@ body, html {
   padding: 10px;
 }
 
-.carrier-container ul{
+.career-container ul{
   list-style: none;
   margin: 10px 0 0 20px;
   padding: 0;
   position: relative;
 }
 
-.carrier-container ul::before{
+.career-container ul::before{
   content: '';
   position: absolute;
   top: 0;
@@ -938,12 +931,12 @@ body, html {
   border: 2px dashed white;
 }
 
-.carrier-container ul li {
+.career-container ul li {
   margin: 50px 60px;
   position: relative;
 }
 
-.carrier-box {
+.career-box {
   width: 800px;
   background: linear-gradient(-45deg, rgba(60, 89, 163, 0.7), rgba(47, 164, 255, 0.7));
   border-radius: 20px;
@@ -953,12 +946,12 @@ body, html {
   font-weight: 600;
 }
 
-.carrier-title {
+.career-title {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.carrier-info { 
+.career-info { 
   font-weight: 200;
 }
 
@@ -966,7 +959,7 @@ body, html {
   font-weight: 600;
 }
 
-.carrier-container ul li > span {
+.career-container ul li > span {
   content: '';
   position: absolute;
   top: 10px;
@@ -976,7 +969,7 @@ body, html {
   border: 2px solid white;
 }
 
-.carrier-container ul li > span::before, .carrier-container ul li > span::after {
+.career-container ul li > span::before, .career-container ul li > span::after {
   content: '';
   width: 15px;
   height: 15px;
@@ -987,15 +980,15 @@ body, html {
   background: rgba(47, 164, 255, 1);
 }
 
-.carrier-container ul li > span::before{
+.career-container ul li > span::before{
   top: -13px;
 }
 
-.carrier-container ul li > span:after{
+.career-container ul li > span:after{
   top: 100%;
 }
 
-.carrier-container ul li .carrier-time span {
+.career-container ul li .career-time span {
   position: absolute;
   width: 60px;
   left: -30px;
@@ -1003,11 +996,11 @@ body, html {
   color: white;
 }
 
-.carrier-container ul li .carrier-time span:first-child{
+.career-container ul li .career-time span:first-child{
   top: 0;
 }
 
-.carrier-container ul li .carrier-time span:last-child{
+.career-container ul li .career-time span:last-child{
   top: 100%;
 }
 
@@ -1275,7 +1268,7 @@ body, html {
     animation: 1s ease-out 0s 1 slideInFromRight;
   }
   
-  .carrier {
+  .career {
     background: linear-gradient(-45deg, rgba(251, 69, 69, 0.7), rgba(251, 69, 69, 0.7));
     margin: 10px 20px 12px 5px;
     transition: transform 0.3s ease;
@@ -1294,7 +1287,7 @@ body, html {
   .copyright {
     font-size: 20px;
     background: linear-gradient(-45deg, rgba(93, 248, 219, 0.7), rgba(7, 234, 255, 0.7));
-    margin: 10px 20px 12px 5px;
+    margin: 10px 20px 12px 10px;
     animation: 1s ease-out 0s 1 slideInFromBottom;
   }
 
@@ -1513,26 +1506,26 @@ body, html {
     height: 100%;
   }
 
-  /* Modal carrier */
+  /* Modal career */
 
-  .modal-content-carrier {
+  .modal-content-career {
     width: 90%; 
     height: auto;
     padding: 10px;
     background-position: 65%;
   }
 
-  .carrier-container {
+  .career-container {
     width: 100%;
     margin: 0;
   }
 
-  .carrier-box {
+  .career-box {
     width: 200px;
     margin: 0;
   }
 
-  .carrier-container ul li .carrier-time span {
+  .career-container ul li .career-time span {
     left: -60px;
   }
 

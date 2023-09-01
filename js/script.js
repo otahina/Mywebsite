@@ -9,7 +9,7 @@
     modal.style.display = 'none';
   }
 
-  var sections = ['about-me', 'skills', 'projects', 'carrier', 'contacts'];
+  var sections = ['about-me', 'skills', 'projects', 'career', 'contacts'];
 
   sections.forEach(function(section) {
     document.getElementById(`${section}-button`).addEventListener('click', function() {
@@ -40,7 +40,7 @@ bubbles.forEach(bubble => {
 
 // Button hover
 
-const buttonIds = ['about-me-button', 'skills-button', 'projects-button', 'carrier-button', 'contacts-button'];
+const buttonIds = ['about-me-button', 'skills-button', 'projects-button', 'career-button', 'contacts-button'];
 
 buttonIds.forEach(buttonId => {
   const button = document.querySelector(`#${buttonId}`);
