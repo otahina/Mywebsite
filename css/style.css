@@ -56,11 +56,11 @@ body, html {
 
 .left.box {
   background-image:
-  linear-gradient(-45deg, rgba(249, 176, 112, 0.2) 0%, rgba(254, 20, 118, 0.2) 100%),
-    url('../img/meme.png');
-  background-size: cover;
+    url('../img/me.png');
+  background-color: rgba(247, 7, 118, 0.7);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 60%;
+  background-position: 50% 100%;
   border-style: None;
   border-radius: 50px;
   height: 98%;
@@ -216,7 +216,7 @@ body, html {
 .bubble {
   position: absolute;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   animation: float linear infinite;
 }
@@ -342,7 +342,6 @@ body, html {
 
 .modal-content-about {
   background-image:
-  linear-gradient(125deg, rgba(56, 188, 253, 0.7),  rgba(3, 128, 223, 0.7)), 
     url('../img/car.jpeg'); 
   background-size: cover;
   background-position: center;
@@ -768,7 +767,6 @@ body, html {
 
 .modal-content-projects {
   background-image:
-  linear-gradient(125deg, rgba(248, 52, 246, 0.7), rgba(152, 38, 252, 0.7)), 
     url('../img/powerfulgirl.jpg'); 
   background-size: cover;
   background-position: center;
@@ -779,30 +777,60 @@ body, html {
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   width: 90%;
-  height: 700px;
+  height: 90%;
   overflow: auto; 
 }
 
 .modal-content-projects h5{
   text-align: center;
-  color: rgb(250, 250, 107);
+  color: #a4508b;
   font-size: 50px;
   padding-top: 20px;
   word-spacing: 20px;
 }
 
 .project {
-  margin: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  width: 90%;
+  margin-top: 5em;
   color: white;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
   padding: 20px;
-  background-color: rgba(42, 24, 24, 0.5);
+  background-color: rgba(43, 65, 98, 0.7);
+  background-image: linear-gradient(315deg, rgba(43, 65, 98, 0.8) 0%, rgba(18, 16, 14, 0.8) 74%);  
+}
+
+.project-digest{
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  padding-left: 2em;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  display: flex;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.digest {
+background-color: rgba(164, 80, 139, 0.7);
+background-image: linear-gradient(0deg, rgba(95, 10, 135, 0.7) 0%, rgba(164, 80, 139, 0.7) 100%);
+  display: inline-block;
+  width: 35%;
+  height: 30vh;
+  border-radius: 1em;
+  margin-right: 20px;
+}
+
+#digest1{
+  background-image:
+  url('../img/pp.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .project h3{
-  background-color: rgba(42, 24, 24, 0.5);
+  background-color: rgba(43, 65, 98, 0.7);
   border-radius: 20px;
   width: 800px;
   padding: 10px 20px 10px 20px;
