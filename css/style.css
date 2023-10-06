@@ -415,18 +415,6 @@ body, html {
 }
 
 
-.social-media-box::before {
-  content: '';
-  position: relative;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 1200px;
-  height: 10%;
-  backdrop-filter: blur(5px);
-  border-top: 2px solid rgba(56, 188, 253, 0.3);
-}
 
 .social-media-box ul {
   position: relative;
@@ -785,8 +773,8 @@ body, html {
   text-align: center;
   color: #a4508b;
   font-size: 50px;
-  padding-top: 20px;
-  word-spacing: 20px;
+   word-spacing: 20px;
+   margin-bottom: 1em;
 }
 
 .project {
@@ -810,6 +798,7 @@ body, html {
   display: flex;
   text-align: center;
   margin-bottom: 1em;
+  margin-top: 2em;
 }
 
 .digest {
@@ -817,16 +806,39 @@ background-color: rgba(164, 80, 139, 0.7);
 background-image: linear-gradient(0deg, rgba(95, 10, 135, 0.7) 0%, rgba(164, 80, 139, 0.7) 100%);
   display: inline-block;
   width: 35%;
-  height: 30vh;
+  height: 40vh;
   border-radius: 1em;
-  margin-right: 20px;
+  margin-right: 1.5em;
 }
 
-#digest1{
-  background-image:
-  url('../img/pp.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+.digest h4{
+  padding: 0 1em 1em 1em;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+#digest1, #digest2{
+  transition: transform 0.3s ease;
+}
+
+#digest1:hover{
+  transform: scale(1.08);
+}
+
+#digest2:hover{
+  transform: scale(1.08);
+}
+
+#digest1-icon{
+  width: 10em;
+  height: 10em;
+}
+
+#digest2-icon{
+  width: 10em;
+  height: 10em;
+  margin-top: 0.3em;
 }
 
 .project h3{
@@ -837,6 +849,7 @@ background-image: linear-gradient(0deg, rgba(95, 10, 135, 0.7) 0%, rgba(164, 80,
   color: white;
   font-size: 28px;
   margin-bottom: 8px;
+  margin-top: 2em;
 }
 
 .project h6{
