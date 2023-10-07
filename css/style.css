@@ -385,7 +385,7 @@ body, html {
 
 .modal-content-about h5{
   text-align: center;
-  color: #dcac34;
+  color: orange;
   font-size: 3em;
   position: relative;
 }
@@ -399,22 +399,27 @@ body, html {
 
 .text-box {
   margin-top: 3em;
+  margin-bottom: 2em;
   background: rgba(255,255,255,0.7);
   position: relative;
   width: 90%;
+  height: 70%;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-#about-me-content-text{
+.about-me-content-text{
   font-family:'Courier New', Courier, monospace;
   font-weight: 500;
   color: #000052;
   padding: 2em;
   width: 100%;
+  line-height: 2em;
 }
 
-
+.about-me-content-text::first-letter{
+  font-size: 2em;
+}
 
 .social-media-box ul {
   position: relative;
@@ -875,25 +880,24 @@ background-image: linear-gradient(0deg, rgba(95, 10, 135, 0.7) 0%, rgba(164, 80,
 /* Career */
 
 .modal-content-career {
-  background-image:
-  linear-gradient(-45deg, rgba(250, 124, 99, 0.7), rgba(255, 110, 20, 0.7)),
-    url('../img/test1.jpeg'); 
+  background:
+    url('../img/saxophne.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: black;
   margin: auto;
-  padding: 20px 30px 0px 50px;
+  padding: 1em 1em 0 1em;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   width: 90%;
-  height: 700px;
+  height: 90%;
   overflow: auto; 
 }
 
 .modal-content-career h5{
   text-align: center;
-  color: #000052;
+  color: rgb(254, 61, 116);
   font-size: 50px;
   padding-top: 20px;
   word-spacing: 20px;
@@ -909,13 +913,13 @@ background-image: linear-gradient(0deg, rgba(95, 10, 135, 0.7) 0%, rgba(164, 80,
   font-family: 'Courier New', Courier, monospace;
   background: rgba(42, 24, 24, 0.5);
   border-radius: 20px;
-  width: 1100px;
+  width: 90%;
   padding: 10px;
 }
 
 .career-container ul{
   list-style: none;
-  margin: 10px 0 0 20px;
+  margin: 10px 0 0 3em;
   padding: 0;
   position: relative;
 }
@@ -936,11 +940,11 @@ background-image: linear-gradient(0deg, rgba(95, 10, 135, 0.7) 0%, rgba(164, 80,
 }
 
 .career-box {
-  width: 800px;
-  background: linear-gradient(-45deg, rgba(60, 89, 163, 0.7), rgba(47, 164, 255, 0.7));
+  width: 90%;
+  background: linear-gradient(-45deg, rgba(60, 89, 163, 0.8), rgba(47, 164, 255, 0.8));
   border-radius: 20px;
   padding: 25px;
-  margin-left: 70px;
+  margin-left: 3em;
   color: white;
   font-weight: 600;
 }
@@ -976,7 +980,7 @@ background-image: linear-gradient(0deg, rgba(95, 10, 135, 0.7) 0%, rgba(164, 80,
   position: absolute;
   border-radius: 50%;
   left: -10px;
-  background: rgba(47, 164, 255, 1);
+  background: rgb(254, 61, 116);
 }
 
 .career-container ul li > span::before{
@@ -1013,12 +1017,12 @@ background-image: linear-gradient(0deg, rgba(95, 10, 135, 0.7) 0%, rgba(164, 80,
   background-position: center; 
   color: black;
   margin: auto;
-  padding: 20px 30px 0px 50px;
+  padding: 1em 2em 2em 3em;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   width: 90%;
-  height: 730px;
-  overflow: hidden;
+  height: 95%;
+  overflow: auto;
 }
 
 
@@ -1038,13 +1042,11 @@ background-image: linear-gradient(0deg, rgba(95, 10, 135, 0.7) 0%, rgba(164, 80,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 390px;
+  width: 40%;
   margin-top: 0;
-  position:relative;
-  left: 62px;
-  top: 149px;
   transition: none 0s ease 0s;
   cursor: move;
+  margin-right: 2em;
 }
 
 .contact-info p {
@@ -1066,6 +1068,10 @@ background-image: linear-gradient(0deg, rgba(95, 10, 135, 0.7) 0%, rgba(164, 80,
   text-decoration: none; /* Remove underline on hover */
 }
 
+.contact-form, .contact-info{
+  display: inline-block;
+}
+
 .contact-form {
   font-family: 'Courier New', Courier, monospace;
   flex-basis: 40%;
@@ -1075,10 +1081,9 @@ background-image: linear-gradient(0deg, rgba(95, 10, 135, 0.7) 0%, rgba(164, 80,
   height: auto;
   margin-right:50px;
   margin-top: 10px;
-  width: 500px;
+  width: 50%;
   position: relative;
-  left: 633px;
-  top: -287px;
+
 }
 
 .contact-form form label,
