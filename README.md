@@ -2,9 +2,6 @@
 
 Welcome to the repository for my **personal website**! It's built with HTML, CSS, JavaScript. 
 
-https://github.com/otahina/Mywebsite/assets/108225969/0c073ad2-2f25-40a5-82c0-e8fc5e85b1c3
-
-
 ## 🚀 Overview 🚀
 
 This website serves as my professional portfolio. My goal was to create a design that is concise and simple, yet colorful and energetic. By visiting the site, I hope you will be able to learn more about me and my work! 😆
